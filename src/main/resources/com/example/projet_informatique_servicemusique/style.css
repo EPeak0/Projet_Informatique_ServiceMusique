@@ -1,0 +1,59 @@
+.button:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.progress-bar {
+    -fx-border-width: 0px;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 4px;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 4px;
+    -fx-padding: 0 0px 0 0px;
+    -fx-background-insets: 0;
+}
+
+.progress-bar .track {
+    -fx-border-width: 0px;
+    -fx-background-color:  #787878;
+    -fx-background-radius: 4px;
+    -fx-padding: 0 0px 0 0px;
+    -fx-background-insets: 0;
+}
+
+.progress-bar .bar {
+    -fx-indeterminate-bar-escape: false;
+    -fx-border-width: 0px;
+    -fx-background-color:  #FFFFFF;
+    -fx-background-insets: 0;
+    -fx-background-radius: 4px;
+}
+
+.slider .thumb {
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0px;
+    -fx-border-color: #00FF00;
+    -fx-border-radius: 0px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 4px;
+}
+
+
+.slider .track {
+    -fx-background-color:null;  /* Hide the track */
+    -fx-background-insets: 1 0 -1 0, 0, 1;
+    -fx-background-radius: 2.5, 2.5, 1.5;
+    -fx-padding: 0.208333em; /* 2.5 */
+}
+
+.text-field {
+    -fx-background-color: null;
+    -fx-background-radius: 0px;
+    -fx-border-color: null;
+    -fx-border-radius: 0px;
+    -fx-border-width: 0px;
+}
+
+.list-view {
+    -fx-background-radius: 20px;
+}

@@ -4,11 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cde3ae57-d8c5-4ae5-b38c-f0b1858ea3d6" name="Changes" comment="" />
+    <list default="true" id="cde3ae57-d8c5-4ae5-b38c-f0b1858ea3d6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaFXApplication" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,11 +39,56 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "F:/HES/Informatique2emesemestre/Projet4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.31804585",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\HES\Informatique2emesemestre\Projet_Informatique_ServiceMusique\src\main\resources" />
+      <recent name="F:\HES\Informatique2emesemestre\Projet_Informatique_ServiceMusique\src\main\resources\com\example\projet_informatique_servicemusique" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.projet_informatique_servicemusique" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.projet_informatique_servicemusique.HelloApplication" />
+      <module name="Projet_Informatique_ServiceMusique" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.projet_informatique_servicemusique.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,8 +97,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683550924547</updated>
-      <workItem from="1683550925737" duration="2000" />
+      <workItem from="1683550925737" duration="1760000" />
+      <workItem from="1683561060624" duration="769000" />
+      <workItem from="1683574055738" duration="201000" />
+      <workItem from="1683612698539" duration="446000" />
+      <workItem from="1683615238202" duration="780000" />
+      <workItem from="1683627676275" duration="6794000" />
+      <workItem from="1683649327151" duration="75000" />
+      <workItem from="1683656936112" duration="2249000" />
+      <workItem from="1683699793276" duration="4394000" />
+      <workItem from="1683728297683" duration="1339000" />
+      <workItem from="1683736318304" duration="4805000" />
+      <workItem from="1683800524883" duration="893000" />
+      <workItem from="1683819675451" duration="5577000" />
+      <workItem from="1683872164117" duration="3111000" />
+      <workItem from="1683887429554" duration="116000" />
+      <workItem from="1683985867177" duration="35000" />
+      <workItem from="1683997532372" duration="1575000" />
+      <workItem from="1684045734470" duration="860000" />
     </task>
+    <task id="LOCAL-00001" summary="First Push">
+      <created>1683551140393</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683551140393</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First Push">
+      <created>1683551164150</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683551164150</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Push" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Push" />
   </component>
 </project>
