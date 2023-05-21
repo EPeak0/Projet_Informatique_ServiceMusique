@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cde3ae57-d8c5-4ae5-b38c-f0b1858ea3d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "F:/HES/Informatique2emesemestre/Projet4",
+    "last_opened_file_path": "F:/HES/Informatique2emesemestre/Projet_Informatique_ServiceMusique",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -114,7 +112,18 @@
       <workItem from="1683887429554" duration="116000" />
       <workItem from="1683985867177" duration="35000" />
       <workItem from="1683997532372" duration="1575000" />
-      <workItem from="1684045734470" duration="860000" />
+      <workItem from="1684045734470" duration="1535000" />
+      <workItem from="1684149842643" duration="646000" />
+      <workItem from="1684152899826" duration="2985000" />
+      <workItem from="1684156426830" duration="3380000" />
+      <workItem from="1684166678140" duration="6956000" />
+      <workItem from="1684252588265" duration="795000" />
+      <workItem from="1684254810305" duration="2531000" />
+      <workItem from="1684260371420" duration="3765000" />
+      <workItem from="1684303844763" duration="4468000" />
+      <workItem from="1684336202159" duration="2384000" />
+      <workItem from="1684341754545" duration="6198000" />
+      <workItem from="1684656938893" duration="6399000" />
     </task>
     <task id="LOCAL-00001" summary="First Push">
       <created>1683551140393</created>
@@ -130,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683551164150</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add UI">
+      <created>1684046776211</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684046776211</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +154,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Push" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Push" />
+    <MESSAGE value="Add UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add UI" />
   </component>
 </project>

@@ -38,7 +38,6 @@
     -fx-background-radius: 4px;
 }
 
-
 .slider .track {
     -fx-background-color:null;  /* Hide the track */
     -fx-background-insets: 1 0 -1 0, 0, 1;
@@ -56,4 +55,29 @@
 
 .list-view {
     -fx-background-radius: 20px;
+}
+
+.list-view .scroll-bar {
+    -fx-background-color: rgb(0,0,0,0);
+    -fx-pref-width: 8;
+    -fx-min-width: 8;
+    -fx-max-width: 8;
+}
+
+.list-view .scroll-bar .thumb {
+    -fx-background-color: #FFFFFF; /* Couleur du slider */
+    -fx-background-radius: 4px; /* Rayon de bordure du slider */
+    -fx-background-insets: 0; /* Marges intérieures du slider */
+}
+
+.list-view .scroll-bar .increment-button,
+.list-view .scroll-bar .decrement-button {
+    -fx-background-color: transparent; /* Couleur de fond transparente */
+    -fx-padding: 0; /* Pas de remplissage */
+}
+
+.list-view .scroll-bar .increment-button .increment-arrow,
+.list-view .scroll-bar .decrement-button .decrement-arrow {
+    -fx-background-color: transparent; /* Couleur de fond transparente */
+    -fx-padding: 0; /* Pas de remplissage */
 }

@@ -15,7 +15,7 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@style.css" HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_informatique_servicemusique.HelloController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@style.css" HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_informatique_servicemusique.HelloController">
    <children>
       <AnchorPane prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: #000000;" VBox.vgrow="NEVER">
          <children>
@@ -41,7 +41,7 @@
       </AnchorPane>
       <AnchorPane prefHeight="0.0" prefWidth="1200.0" style="-fx-background-color: #000000;" VBox.vgrow="ALWAYS">
          <children>
-            <ListView focusTraversable="false" layoutX="20.0" prefHeight="0.0" prefWidth="1160.0" style="-fx-background-color: #171719;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0" />
+            <ListView fx:id="lsv_ListeMusique" focusTraversable="false" layoutX="20.0" prefHeight="0.0" prefWidth="1160.0" style="-fx-background-color: #171719;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0" />
          </children></AnchorPane>
       <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1200.0" style="-fx-background-color: #000000;" VBox.vgrow="NEVER">
          <children>
@@ -68,8 +68,8 @@
                   </Label>
                   <Group layoutX="60.0" layoutY="32.0" AnchorPane.bottomAnchor="28.0">
                      <children>
-                        <ProgressBar fx:id="psb_Timeline" layoutY="4.0" prefHeight="8.0" prefWidth="340.0" progress="0.43" />
-                        <Slider fx:id="sli_Timeline" focusTraversable="false" onScroll="#sli_Timeline_Scroll" onScrollFinished="#sli_Timeline_Scroll_Finished" onScrollStarted="#sli_Timeline_Scroll_Start" prefHeight="16.0" prefWidth="340.0" value="42.0" />
+                        <ProgressBar fx:id="psb_Timeline" layoutY="4.0" prefHeight="8.0" prefWidth="340.0" progress="${sli_Timeline.value}" />
+                        <Slider id="sli_Timelime" fx:id="sli_Timeline" focusTraversable="false" max="1.0" prefHeight="16.0" prefWidth="340.0" value="0.43" />
                      </children>
                   </Group>
                   <Label fx:id="lbl_TempsTot1" layoutX="410.0" layoutY="32.0" prefHeight="16.0" prefWidth="50.0" text="0:00" textFill="WHITE" AnchorPane.bottomAnchor="32.0">
