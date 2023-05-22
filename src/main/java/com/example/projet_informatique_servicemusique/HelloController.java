@@ -14,6 +14,7 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -58,7 +59,7 @@ public class HelloController implements Initializable {
         HBox.setHgrow(lbl_album, Priority.NEVER);
 
         // Mettre en forme l'image
-        image.setImage(new Image("C:\\Users\\diemo\\Pictures\\Background\\Image3.jpg"));
+        image.setImage(new Image("ImageTest.jpg"));
         image.setFitHeight(50);
         image.setFitWidth(50);
         HBox.setHgrow(image, Priority.NEVER);
