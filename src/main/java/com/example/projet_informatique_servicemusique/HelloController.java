@@ -61,13 +61,10 @@ public class HelloController implements Initializable {
         lbl_album.setAlignment(Pos.CENTER);
         HBox.setHgrow(lbl_album, Priority.NEVER);
 
-
-
-        // Obtenir l'URL de la ressource en utilisant le chemin relatif
-        String imagePath = "/src/main/resources/Pictures/ImageTest.jpg";
-        ClassLoader classLoader = getClass().getClassLoader();
-        Image image2 = new Image(classLoader.getResourceAsStream(imagePath));
-        ImageView image = new ImageView(image2);
+        // On va chercher l'image
+        String path = new File("src/main/resources/Pictures/ImageTest.jpg").getAbsolutePath();
+        String path2 = new File("src/main/resources/Pictures/ImagePlay.png").getAbsolutePath();
+        ImageView image = new ImageView(path);
 
         // Mettre en forme l'image
         image.setFitHeight(50);
@@ -97,12 +94,12 @@ public class HelloController implements Initializable {
         // Faire en sorte que le play s'affiche
         groupe.setOnMouseEntered(event -> {
             //ImageView image = (ImageView) groupe.getChildren().get(0);
-            image.setImage(new Image("C:\\Users\\diemo\\Pictures\\Background\\Image2.jpg")); // Changer l'image au survol
+            image.setImage(new Image(path2)); // Changer l'image au survol
         });
 
         groupe.setOnMouseExited(event -> {
             //ImageView image = (ImageView) groupe.getChildren().get(0);
-            image.setImage(new Image("C:\\Users\\diemo\\Pictures\\Background\\Image3.jpg")); // Rétablir l'image par défaut
+            image.setImage(new Image(path)); // Rétablir l'image par défaut
         });
 
         // Detection du "click"
