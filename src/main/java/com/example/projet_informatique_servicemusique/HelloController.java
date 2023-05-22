@@ -13,10 +13,13 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
 
 public class HelloController implements Initializable {
 
@@ -35,7 +38,7 @@ public class HelloController implements Initializable {
         Label lbl_Titre = new Label(titre);
         Label lbl_artiste = new Label(artiste);
         Label lbl_album = new Label(album);
-        ImageView image = new ImageView();
+
 
         // Definition de la police d'écriture
         Font fontBig = Font.font("Arial Rounded MT Bold", 18);
@@ -58,8 +61,15 @@ public class HelloController implements Initializable {
         lbl_album.setAlignment(Pos.CENTER);
         HBox.setHgrow(lbl_album, Priority.NEVER);
 
+
+
+        // Obtenir l'URL de la ressource en utilisant le chemin relatif
+        String imagePath = "/src/main/resources/Pictures/ImageTest.jpg";
+        ClassLoader classLoader = getClass().getClassLoader();
+        Image image2 = new Image(classLoader.getResourceAsStream(imagePath));
+        ImageView image = new ImageView(image2);
+
         // Mettre en forme l'image
-        image.setImage(new Image("ImageTest.jpg"));
         image.setFitHeight(50);
         image.setFitWidth(50);
         HBox.setHgrow(image, Priority.NEVER);
@@ -121,15 +131,15 @@ public class HelloController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         ObservableList<HBox> items = FXCollections.observableArrayList();
-        items.add(creerGroupe("Groupe 1", "artiste example","album example", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+
+            items.add(creerGroupe("Groupe 1", "artiste example","album example", "Image1.jpg"));
+
+            items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+
+            items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+
+            items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+
 
         FilteredList<HBox> filteredItems = new FilteredList<>(items);
         lsv_ListeMusique.setItems(filteredItems);
