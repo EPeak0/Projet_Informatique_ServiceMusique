@@ -62,7 +62,9 @@ public class HelloController implements Initializable {
         HBox.setHgrow(lbl_album, Priority.NEVER);
 
         // Mettre en forme l'image
-        image.setImage(new Image("C:\\Users\\diemo\\Pictures\\Background\\Image3.jpg"));
+        String path = new File("src/main/resources/Pictures/ImageTest.jpg").getAbsolutePath();
+        String path2 = new File("src/main/resources/Pictures/ImagePlay.png").getAbsolutePath();
+        image.setImage(new Image(path));
         image.setFitHeight(50);
         image.setFitWidth(50);
         HBox.setHgrow(image, Priority.NEVER);
@@ -90,12 +92,12 @@ public class HelloController implements Initializable {
         // Faire en sorte que le play s'affiche
         groupe.setOnMouseEntered(event -> {
             //ImageView image = (ImageView) groupe.getChildren().get(0);
-            image.setImage(new Image("C:\\Users\\diemo\\Pictures\\Background\\Image2.jpg")); // Changer l'image au survol
+            image.setImage(new Image(path2)); // Changer l'image au survol
         });
 
         groupe.setOnMouseExited(event -> {
             //ImageView image = (ImageView) groupe.getChildren().get(0);
-            image.setImage(new Image("C:\\Users\\diemo\\Pictures\\Background\\Image3.jpg")); // Rétablir l'image par défaut
+            image.setImage(new Image(path)); // Rétablir l'image par défaut
         });
 
         // Detection du "click"
@@ -110,7 +112,9 @@ public class HelloController implements Initializable {
     }
 
     //Création d'objet pour lire la musique avec le chemin relatif
-    Media media = new Media(new File("src/musique/Damso.mp3").toURI().toString());
+
+    String music = new File("src/main/resources/Damso.mp3").getAbsolutePath();
+    Media media = new Media(new File(music).toURI().toString());
     MediaPlayer mediaPlayer = new MediaPlayer(media);
     @FXML
     protected void btn_Play_Click()
