@@ -11,15 +11,15 @@ import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import javafx.util.Duration;
+
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
 
 public class HelloController implements Initializable {
 
@@ -38,7 +38,7 @@ public class HelloController implements Initializable {
         Label lbl_Titre = new Label(titre);
         Label lbl_artiste = new Label(artiste);
         Label lbl_album = new Label(album);
-
+        ImageView image = new ImageView();
 
         // Definition de la police d'écriture
         Font fontBig = Font.font("Arial Rounded MT Bold", 18);
@@ -61,15 +61,10 @@ public class HelloController implements Initializable {
         lbl_album.setAlignment(Pos.CENTER);
         HBox.setHgrow(lbl_album, Priority.NEVER);
 
-
-
-        // Obtenir l'URL de la ressource en utilisant le chemin relatif
-        String imagePath = "/src/main/resources/Pictures/ImageTest.jpg";
-        ClassLoader classLoader = getClass().getClassLoader();
-        Image image2 = new Image(classLoader.getResourceAsStream(imagePath));
-        ImageView image = new ImageView(image2);
-
         // Mettre en forme l'image
+        String path = new File("src/main/resources/Pictures/ImageTest.jpg").getAbsolutePath();
+        String path2 = new File("src/main/resources/Pictures/ImagePlay.png").getAbsolutePath();
+        image.setImage(new Image(path));
         image.setFitHeight(50);
         image.setFitWidth(50);
         HBox.setHgrow(image, Priority.NEVER);
@@ -97,12 +92,12 @@ public class HelloController implements Initializable {
         // Faire en sorte que le play s'affiche
         groupe.setOnMouseEntered(event -> {
             //ImageView image = (ImageView) groupe.getChildren().get(0);
-            image.setImage(new Image("C:\\Users\\diemo\\Pictures\\Background\\Image2.jpg")); // Changer l'image au survol
+            image.setImage(new Image(path2)); // Changer l'image au survol
         });
 
         groupe.setOnMouseExited(event -> {
             //ImageView image = (ImageView) groupe.getChildren().get(0);
-            image.setImage(new Image("C:\\Users\\diemo\\Pictures\\Background\\Image3.jpg")); // Rétablir l'image par défaut
+            image.setImage(new Image(path)); // Rétablir l'image par défaut
         });
 
         // Detection du "click"
@@ -116,8 +111,61 @@ public class HelloController implements Initializable {
         return groupe;
     }
 
+    //Création d'objet pour lire la musique avec le chemin relatif
+
+    String music = new File("src/main/resources/Damso.mp3").getAbsolutePath();
+    Media media = new Media(new File(music).toURI().toString());
+    MediaPlayer mediaPlayer = new MediaPlayer(media);
     @FXML
-    protected void btn_Play_Click() {
+    protected void btn_Play_Click()
+    {
+        if(mediaPlayer.getStatus() != MediaPlayer.Status.PLAYING && mediaPlayer.getStatus() != MediaPlayer.Status.PAUSED)
+        {
+            mediaPlayer.play();
+            System.out.println("Musique qui se lance");
+            System.out.println(mediaPlayer.getStatus());
+
+        }
+
+        else if(mediaPlayer.getStatus() == MediaPlayer.Status.PLAYING)
+        {
+            System.out.println("Musique en pause");
+            mediaPlayer.pause();
+        }
+
+        else if(mediaPlayer.getStatus() == MediaPlayer.Status.PAUSED)
+        {
+            System.out.println("Musique qui repart");
+            mediaPlayer.play();
+        }
+
+        /*else if (mediaPlayer.getStatus() == MediaPlayer.Status.STOPPED)
+        {
+            currentTrackIndex = (currentTrackIndex + 1) % musicFiles.length;
+        }*/
+
+        mediaPlayer.currentTimeProperty().addListener((observable, oldValue, newValue) -> { //Fonction pour ajuster le progressbarre en fonction du temps
+            double duration = mediaPlayer.getTotalDuration().toMillis();
+            double remaining = duration - mediaPlayer.getCurrentTime().toMillis();
+            double progress = remaining / duration;
+            psb_Timeline.setProgress(1-progress);
+
+            sli_Timeline.setMin(0);
+            sli_Timeline.setMax(duration);
+            sli_Timeline.setValue(newValue.toMillis());
+
+            sli_Timeline.setOnMouseReleased(event -> {
+                mediaPlayer.seek(Duration.millis(sli_Timeline.getValue())); //Fonction pour faire avancer le slider et donc la musique
+            });
+
+            /*Duration remainingTime = Duration.millis(remaining);
+            String formattedRemainingTime = String.format("%02d:%02d", (int)remainingTime.toMinutes(), (int)remainingTime.toSeconds() % 60);
+            lbl_tempsRestant.setText("Temps restant : " + formattedRemainingTime);
+
+            Duration Time = Duration.millis(mediaPlayer.getCurrentTime().toMillis());
+            String RemainingTime = String.format("%02d:%02d", (int)Time.toMinutes(), (int)Time.toSeconds() % 60);
+            lbl_temps.setText(String.valueOf("Temps : " + RemainingTime));*/
+        });
 
     }
     @FXML
@@ -131,15 +179,15 @@ public class HelloController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         ObservableList<HBox> items = FXCollections.observableArrayList();
-
-            items.add(creerGroupe("Groupe 1", "artiste example","album example", "Image1.jpg"));
-
-            items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-
-            items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-
-            items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-
+        items.add(creerGroupe("Groupe 1", "artiste example","album example", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
 
         FilteredList<HBox> filteredItems = new FilteredList<>(items);
         lsv_ListeMusique.setItems(filteredItems);
