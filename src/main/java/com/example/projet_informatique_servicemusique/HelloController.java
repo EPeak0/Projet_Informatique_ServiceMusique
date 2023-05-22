@@ -148,8 +148,10 @@ public class HelloController implements Initializable {
             double duration = mediaPlayer.getTotalDuration().toMillis();
             double remaining = duration - mediaPlayer.getCurrentTime().toMillis();
             double progress = remaining / duration;
-            psb_Timeline.setProgress(1-progress);
 
+            //psb_Timeline.setProgress(1-progress);
+
+            sli_Timeline.setValue(1-progress);
             sli_Timeline.setMin(0);
             sli_Timeline.setMax(duration);
             sli_Timeline.setValue(newValue.toMillis());
