@@ -11,12 +11,8 @@ import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import javafx.util.Duration;
-import java.io.*;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -109,59 +105,8 @@ public class HelloController implements Initializable {
         return groupe;
     }
 
-    //Objet mediaPlayer pour avoir le chemin de la musique à lire
-    Media media = new Media(new File("src/musique/Damso.mp3").toURI().toString());
-    MediaPlayer mediaPlayer = new MediaPlayer(media);
     @FXML
-    protected void btn_Play_Click()
-    {
-        if(mediaPlayer.getStatus() != MediaPlayer.Status.PLAYING && mediaPlayer.getStatus() != MediaPlayer.Status.PAUSED)
-        {
-            mediaPlayer.play();
-            System.out.println("Musique qui se lance");
-            System.out.println(mediaPlayer.getStatus());
-
-        }
-
-        else if(mediaPlayer.getStatus() == MediaPlayer.Status.PLAYING)
-        {
-            System.out.println("Musique en pause");
-            mediaPlayer.pause();
-        }
-
-        else if(mediaPlayer.getStatus() == MediaPlayer.Status.PAUSED)
-        {
-            System.out.println("Musique qui repart");
-            mediaPlayer.play();
-        }
-
-        /*else if (mediaPlayer.getStatus() == MediaPlayer.Status.STOPPED)
-        {
-            currentTrackIndex = (currentTrackIndex + 1) % musicFiles.length;
-        }*/
-
-        mediaPlayer.currentTimeProperty().addListener((observable, oldValue, newValue) -> { //Fonction pour ajuster le progressbarre en fonction du temps
-            double duration = mediaPlayer.getTotalDuration().toMillis();
-            double remaining = duration - mediaPlayer.getCurrentTime().toMillis();
-            double progress = remaining / duration;
-            psb_Timeline.setProgress(1-progress);
-
-            sli_Timeline.setMin(0);
-            sli_Timeline.setMax(duration);
-            sli_Timeline.setValue(newValue.toMillis());
-
-            sli_Timeline.setOnMouseReleased(event -> {
-                mediaPlayer.seek(Duration.millis(sli_Timeline.getValue())); //Fonction pour faire avancer le slider et donc la musique
-            });
-
-            /*Duration remainingTime = Duration.millis(remaining);
-            String formattedRemainingTime = String.format("%02d:%02d", (int)remainingTime.toMinutes(), (int)remainingTime.toSeconds() % 60);
-            lbl_tempsRestant.setText("Temps restant : " + formattedRemainingTime);
-
-            Duration Time = Duration.millis(mediaPlayer.getCurrentTime().toMillis());
-            String RemainingTime = String.format("%02d:%02d", (int)Time.toMinutes(), (int)Time.toSeconds() % 60);
-            lbl_temps.setText(String.valueOf("Temps : " + RemainingTime));*/
-        });
+    protected void btn_Play_Click() {
 
     }
     @FXML
