@@ -122,6 +122,14 @@ public class HelloController implements Initializable {
         ObservableList<HBox> items = FXCollections.observableArrayList();
         items.add(creerGroupe("Groupe 1", "artiste example","album example", "Image1.jpg"));
         items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+
         FilteredList<HBox> filteredItems = new FilteredList<>(items);
         lsv_ListeMusique.setItems(filteredItems);
         lsv_ListeMusique.setCellFactory(param -> new NoMarginListCell());
@@ -135,7 +143,7 @@ public class HelloController implements Initializable {
                 VBox vbox = (VBox) hbox.getChildren().get(1);
                 Label titreLabel = (Label)  vbox.getChildren().get(0);
                 Label artisteLabel = (Label)  vbox.getChildren().get(1);
-                Label albumLabel = (Label) hbox.getChildren().get(2);
+                Label albumLabel = (Label) hbox.getChildren().get(3);
                 String titre = titreLabel.getText().toLowerCase();
                 String artiste = artisteLabel.getText().toLowerCase();
                 String album = albumLabel.getText().toLowerCase();
