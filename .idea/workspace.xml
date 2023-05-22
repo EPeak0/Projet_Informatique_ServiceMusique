@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cde3ae57-d8c5-4ae5-b38c-f0b1858ea3d6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" afterDir="false" />
-    </list>
+    <list default="true" id="cde3ae57-d8c5-4ae5-b38c-f0b1858ea3d6" name="Changes" comment="ajout de la lib" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,17 +29,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "F:/HES/Informatique2emesemestre/demo2",
+    "last_opened_file_path": "C:/Users/theot/Desktop/Projet_Informatique_ServiceMusique",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.31804585",
     "vue.rearranger.settings.migration": "true"
@@ -56,11 +57,7 @@
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\HES\Informatique2emesemestre\Projet_Informatique_ServiceMusique\src\main\resources\Pictures" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\HES\Informatique2emesemestre\Projet_Informatique_ServiceMusique\src\main\resources\Pictures" />
       <recent name="F:\HES\Informatique2emesemestre\Projet_Informatique_ServiceMusique\src\main\resources" />
       <recent name="F:\HES\Informatique2emesemestre\Projet_Informatique_ServiceMusique\src\main\resources\com\example\projet_informatique_servicemusique" />
     </key>
@@ -126,7 +123,6 @@
       <workItem from="1684341754545" duration="6198000" />
       <workItem from="1684656938893" duration="6513000" />
       <workItem from="1684750841168" duration="2393000" />
-      <workItem from="1684758376766" duration="1723000" />
     </task>
     <task id="LOCAL-00001" summary="First Push">
       <created>1683551140393</created>
@@ -156,24 +152,42 @@
       <option name="project" value="LOCAL" />
       <updated>1684663450710</updated>
     </task>
-    <task id="LOCAL-00005" summary="Preparation de la liste + divers ameliorations + correction de bugs">
-      <created>1684758412687</created>
+    <task id="LOCAL-00005" summary="ajout de la lib">
+      <created>1684759299987</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1684758412687</updated>
+      <updated>1684759299987</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ajout de la lib">
+      <created>1684759352511</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684759352511</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Push" />
     <MESSAGE value="Add UI" />
     <MESSAGE value="Preparation de la liste + divers ameliorations" />
-    <MESSAGE value="Preparation de la liste + divers ameliorations + correction de bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparation de la liste + divers ameliorations + correction de bugs" />
+    <MESSAGE value="ajout de la lib" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de la lib" />
   </component>
 </project>
