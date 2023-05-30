@@ -1,5 +1,6 @@
 package com.example.projet_informatique_servicemusique;
 
+import com.opencsv.CSVReader;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
@@ -18,6 +19,7 @@ import javafx.scene.text.Font;
 import javafx.util.Duration;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -115,6 +117,7 @@ public class HelloController implements Initializable {
         return groupe;
     }
 
+
     //Création d'objet pour lire la musique avec le chemin relatif
     String music = new File("src/main/resources/Songs/Damso.mp3").getAbsolutePath();
     Media media = new Media(new File(music).toURI().toString());
@@ -180,15 +183,14 @@ public class HelloController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         ObservableList<HBox> items = FXCollections.observableArrayList();
-        items.add(creerGroupe("Groupe 1", "artiste example","album example", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
-        items.add(creerGroupe("Groupe 2", "7777777777777zzzz","2eftgwg4", "Image1.jpg"));
+        try (CSVReader csvReader = new CSVReader(new FileReader(new File("src/main/resources/BaseDonnee.csv").getAbsolutePath()), ';')) {
+            String[] ligne;
+            while ((ligne = csvReader.readNext()) != null) {
+                items.add(creerGroupe(ligne[0], ligne[1],ligne[2], "Image1.jpg"));
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         FilteredList<HBox> filteredItems = new FilteredList<>(items);
         lsv_ListeMusique.setItems(filteredItems);

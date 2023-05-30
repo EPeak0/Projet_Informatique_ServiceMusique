@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cde3ae57-d8c5-4ae5-b38c-f0b1858ea3d6" name="Changes" comment="Fonction du bouton PLAY">
+    <list default="true" id="cde3ae57-d8c5-4ae5-b38c-f0b1858ea3d6" name="Changes" comment="Lire le fichier CSV">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_05_2023_12_52_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_05_2023_12_52__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_mai_2023_16_06.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_mai_2023_16_06.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Damso.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Songs/Damso.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,39 +44,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/HES/Informatique2emesemestre/Projet_Informatique_ServiceMusique&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.22183909&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/theot/Desktop/Projet_Spotify",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.31804585",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\HES\Informatique2emesemestre\Projet_Informatique_ServiceMusique\src\main\resources\Songs" />
       <recent name="C:\Users\theot\Desktop\Projet_Informatique_ServiceMusique\lib" />
       <recent name="F:\HES\Informatique2emesemestre\Projet_Informatique_ServiceMusique\src\main\resources" />
       <recent name="F:\HES\Informatique2emesemestre\Projet_Informatique_ServiceMusique\src\main\resources\com\example\projet_informatique_servicemusique" />
@@ -138,12 +141,6 @@
       <workItem from="1684341754545" duration="6198000" />
       <workItem from="1684656938893" duration="6513000" />
       <workItem from="1684750841168" duration="2393000" />
-      <workItem from="1684765128685" duration="369000" />
-      <workItem from="1684838237999" duration="6196000" />
-      <workItem from="1684861322897" duration="6189000" />
-      <workItem from="1684908292441" duration="5103000" />
-      <workItem from="1685270412065" duration="1811000" />
-      <workItem from="1685443558051" duration="334000" />
     </task>
     <task id="LOCAL-00001" summary="First Push">
       <created>1683551140393</created>
@@ -208,14 +205,7 @@
       <option name="project" value="LOCAL" />
       <updated>1684763267623</updated>
     </task>
-    <task id="LOCAL-00010" summary="Fonction du bouton PLAY">
-      <created>1684765149540</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1684765149540</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +228,7 @@
     <MESSAGE value="Preparation de la liste + divers ameliorations" />
     <MESSAGE value="ajout de la lib" />
     <MESSAGE value="Fonction du bouton PLAY" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fonction du bouton PLAY" />
+    <MESSAGE value="Lire le fichier CSV" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lire le fichier CSV" />
   </component>
 </project>
