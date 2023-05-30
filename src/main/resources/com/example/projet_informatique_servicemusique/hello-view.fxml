@@ -69,7 +69,7 @@
                   <Group layoutX="60.0" layoutY="32.0" AnchorPane.bottomAnchor="28.0">
                      <children>
                         <ProgressBar fx:id="psb_Timeline" layoutY="4.0" prefHeight="8.0" prefWidth="340.0" progress="${sli_Timeline.value}" />
-                        <Slider id="sli_Timelime" fx:id="sli_Timeline" focusTraversable="false" layoutX="-8.0" max="1.0" prefHeight="16.0" prefWidth="356.0" value="0.43" />
+                        <Slider id="sli_Timelime" fx:id="sli_Timeline" focusTraversable="false" layoutX="-8.0" max="1.0" prefHeight="16.0" prefWidth="356.0" />
                      </children>
                   </Group>
                   <Label fx:id="lbl_TempsTot1" layoutX="410.0" layoutY="32.0" prefHeight="16.0" prefWidth="50.0" text="0:00" textFill="WHITE" AnchorPane.bottomAnchor="32.0">
