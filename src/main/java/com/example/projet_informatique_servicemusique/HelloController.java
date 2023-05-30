@@ -16,8 +16,8 @@ import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.util.Duration;
-
 import java.io.File;
+import java.io.FileReader;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -31,6 +31,10 @@ public class HelloController implements Initializable {
     protected ListView lsv_ListeMusique;
     @FXML
     protected TextField txt_Recherche;
+    @FXML
+    protected Label lbl_TempsTot;
+    @FXML
+    protected Label lbl_TempsTot1;
 
     // Permet de creer 1 ligne pour la liste
     public HBox creerGroupe(String titre, String artiste, String album, String nomImage) {
@@ -112,8 +116,7 @@ public class HelloController implements Initializable {
     }
 
     //Création d'objet pour lire la musique avec le chemin relatif
-
-    String music = new File("src/main/resources/Damso.mp3").getAbsolutePath();
+    String music = new File("src/main/resources/Songs/Damso.mp3").getAbsolutePath();
     Media media = new Media(new File(music).toURI().toString());
     MediaPlayer mediaPlayer = new MediaPlayer(media);
     @FXML
@@ -149,24 +152,20 @@ public class HelloController implements Initializable {
             double remaining = duration - mediaPlayer.getCurrentTime().toMillis();
             double progress = remaining / duration;
 
-            //psb_Timeline.setProgress(1-progress);
-
             sli_Timeline.setValue(1-progress);
-            sli_Timeline.setMin(0);
-            sli_Timeline.setMax(duration);
-            sli_Timeline.setValue(newValue.toMillis());
-
+            sli_Timeline.setValue(newValue.toMillis()/duration);
+            
             sli_Timeline.setOnMouseReleased(event -> {
-                mediaPlayer.seek(Duration.millis(sli_Timeline.getValue())); //Fonction pour faire avancer le slider et donc la musique
+                mediaPlayer.seek(Duration.millis((sli_Timeline.getValue())*duration)); //Fonction pour faire avancer le slider et donc la musique
             });
 
-            /*Duration remainingTime = Duration.millis(remaining);
+            Duration remainingTime = Duration.millis(remaining);
             String formattedRemainingTime = String.format("%02d:%02d", (int)remainingTime.toMinutes(), (int)remainingTime.toSeconds() % 60);
-            lbl_tempsRestant.setText("Temps restant : " + formattedRemainingTime);
+            lbl_TempsTot1.setText(formattedRemainingTime);
 
             Duration Time = Duration.millis(mediaPlayer.getCurrentTime().toMillis());
             String RemainingTime = String.format("%02d:%02d", (int)Time.toMinutes(), (int)Time.toSeconds() % 60);
-            lbl_temps.setText(String.valueOf("Temps : " + RemainingTime));*/
+            lbl_TempsTot.setText(String.valueOf(RemainingTime));
         });
 
     }
@@ -211,6 +210,8 @@ public class HelloController implements Initializable {
                 return titre.contains(filterText) || artiste.contains(filterText) || album.contains(filterText);
             });
         });
+
+
     }
 
     private class NoMarginListCell extends ListCell<HBox> {
