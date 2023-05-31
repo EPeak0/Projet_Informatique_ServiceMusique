@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -39,7 +40,7 @@ public class HelloController implements Initializable {
     protected Label lbl_TempsTot1;
 
     // Permet de creer 1 ligne pour la liste
-    public HBox creerGroupe(String titre, String artiste, String album, String nomImage) {
+    public HBox creerGroupe(String titre, String artiste, String album, String Chemin, String nomImage) {
         // Declaration des objets
         Label lbl_Titre = new Label(titre);
         Label lbl_artiste = new Label(artiste);
@@ -108,20 +109,55 @@ public class HelloController implements Initializable {
 
         // Detection du "click"
         groupe.setOnMouseClicked(event -> {
+
             System.out.println("Élément de la liste cliqué !");
             System.out.println("Titre: " + titre);
             System.out.println("Artiste: " + artiste);
             System.out.println("Album: " + album);
+
+            LectureMusique(Chemin);
+
         });
+
 
         return groupe;
     }
 
-
-    //Création d'objet pour lire la musique avec le chemin relatif
+    //Création d'objet pour lire la musique avec le chemin absolue
     String music = new File("src/main/resources/Songs/Damso.mp3").getAbsolutePath();
     Media media = new Media(new File(music).toURI().toString());
     MediaPlayer mediaPlayer = new MediaPlayer(media);
+
+    public void LectureMusique(String Chemin)
+    {
+        mediaPlayer.stop();
+        music = new File(Chemin).getAbsolutePath();
+        media = new Media(new File(music).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+        mediaPlayer.play();
+
+        mediaPlayer.currentTimeProperty().addListener((observable, oldValue, newValue) -> { //Fonction pour ajuster le progressbarre en fonction du temps
+            double duration = mediaPlayer.getTotalDuration().toMillis();
+            double remaining = duration - mediaPlayer.getCurrentTime().toMillis();
+            double progress = remaining / duration;
+
+            sli_Timeline.setValue(1-progress);
+            sli_Timeline.setValue(newValue.toMillis()/duration);
+
+            sli_Timeline.setOnMouseReleased(event -> {
+                mediaPlayer.seek(Duration.millis((sli_Timeline.getValue())*duration)); //Fonction pour faire avancer le slider et donc la musique
+            });
+
+            Duration remainingTime = Duration.millis(remaining);
+            String formattedRemainingTime = String.format("%02d:%02d", (int)remainingTime.toMinutes(), (int)remainingTime.toSeconds() % 60);
+            lbl_TempsTot1.setText(formattedRemainingTime);
+
+            Duration Time = Duration.millis(mediaPlayer.getCurrentTime().toMillis());
+            String RemainingTime = String.format("%02d:%02d", (int)Time.toMinutes(), (int)Time.toSeconds() % 60);
+            lbl_TempsTot.setText(String.valueOf(RemainingTime));
+        });
+
+    }
     @FXML
     protected void btn_Play_Click()
     {
@@ -145,32 +181,6 @@ public class HelloController implements Initializable {
             mediaPlayer.play();
         }
 
-        /*else if (mediaPlayer.getStatus() == MediaPlayer.Status.STOPPED)
-        {
-            currentTrackIndex = (currentTrackIndex + 1) % musicFiles.length;
-        }*/
-
-        mediaPlayer.currentTimeProperty().addListener((observable, oldValue, newValue) -> { //Fonction pour ajuster le progressbarre en fonction du temps
-            double duration = mediaPlayer.getTotalDuration().toMillis();
-            double remaining = duration - mediaPlayer.getCurrentTime().toMillis();
-            double progress = remaining / duration;
-
-            sli_Timeline.setValue(1-progress);
-            sli_Timeline.setValue(newValue.toMillis()/duration);
-            
-            sli_Timeline.setOnMouseReleased(event -> {
-                mediaPlayer.seek(Duration.millis((sli_Timeline.getValue())*duration)); //Fonction pour faire avancer le slider et donc la musique
-            });
-
-            Duration remainingTime = Duration.millis(remaining);
-            String formattedRemainingTime = String.format("%02d:%02d", (int)remainingTime.toMinutes(), (int)remainingTime.toSeconds() % 60);
-            lbl_TempsTot1.setText(formattedRemainingTime);
-
-            Duration Time = Duration.millis(mediaPlayer.getCurrentTime().toMillis());
-            String RemainingTime = String.format("%02d:%02d", (int)Time.toMinutes(), (int)Time.toSeconds() % 60);
-            lbl_TempsTot.setText(String.valueOf(RemainingTime));
-        });
-
     }
     @FXML
     protected void btn_Next_Click() {
@@ -186,7 +196,7 @@ public class HelloController implements Initializable {
         try (CSVReader csvReader = new CSVReader(new FileReader(new File("src/main/resources/BaseDonnee.csv").getAbsolutePath()), ';')) {
             String[] ligne;
             while ((ligne = csvReader.readNext()) != null) {
-                items.add(creerGroupe(ligne[0], ligne[1],ligne[2], "Image1.jpg"));
+                items.add(creerGroupe(ligne[0], ligne[1],ligne[2],ligne[3],"Image1.jpg"));
             }
         } catch (IOException e) {
             e.printStackTrace();
