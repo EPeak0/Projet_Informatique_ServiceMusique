@@ -11,11 +11,11 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1200, 800);
+        Scene scene = new Scene(fxmlLoader.load());//, 1200, 800);
         stage.setTitle("TDT");
         stage.setScene(scene);
 
-        // Définir une taille minimale pour la fenêtre
+        //Définir une taille minimale pour la fenêtre
         stage.setMinWidth(800);
         stage.setMinHeight(500);
 

@@ -23,9 +23,9 @@
       <AnchorPane prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: #000000;" VBox.vgrow="NEVER">
          <children>
             <Label layoutX="104.0" layoutY="29.0" text="TDT" textFill="WHITE">
-               <font>
-                  <Font name="Arial Rounded MT Bold" size="36.0" />
-               </font>
+              <!-- <font>
+                  <Font name="Arial Rounded MT Bold" />
+               </font> -->
             </Label>
             <SVGPath content="M 0.611 0.36 L 9.492 5.562 C 11.393 6.68 11.438 7.932 9.714 8.919 L 0.852 14.031 C -0.915 15.149 -1.966 14.59 -1.956 12.42 L -1.956 1.994 C -1.975 -0.168 -1.114 -0.656 0.611 0.36" fill="WHITE" layoutX="70.0" layoutY="44.0" scaleX="2.6" scaleY="2.6" />
             <Group layoutX="840.0" layoutY="30.0" AnchorPane.rightAnchor="70.0">
@@ -73,9 +73,9 @@
             <AnchorPane prefHeight="80.0" prefWidth="370.0" HBox.hgrow="ALWAYS">
                <children>
                   <Label fx:id="lbl_Titre" layoutX="70.0" layoutY="18.0" text="Titre" textFill="WHITE" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="70.0">
-                     <font>
+                   <!--  <font>
                         <Font name="Arial Rounded MT Bold" size="18.0" />
-                     </font>
+                     </font> -->
                   </Label>
                   <HBox alignment="CENTER_LEFT" layoutX="107.0" layoutY="22.0" prefHeight="14.0" prefWidth="300.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="70.0">
                      <children>
