@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -34,7 +37,7 @@
                         <Font name="Arial Rounded MT Bold" size="12.0" />
                      </font>
                   </TextField>
-                  <Circle fill="WHITE" layoutX="244.0" layoutY="20.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Circle fill="WHITE" layoutX="250.0" layoutY="20.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
                </children>
             </Group>
          </children>
@@ -42,6 +45,28 @@
       <AnchorPane prefHeight="0.0" prefWidth="1200.0" style="-fx-background-color: #000000;" VBox.vgrow="ALWAYS">
          <children>
             <ListView fx:id="lsv_ListeMusique" focusTraversable="false" layoutX="20.0" prefHeight="0.0" prefWidth="1160.0" style="-fx-background-color: #171719;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0" />
+            <Separator layoutX="44.0" layoutY="31.0" maxHeight="2.0" minHeight="2.0" prefHeight="2.0" prefWidth="1160.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="40.0" />
+            <Group layoutX="959.0" layoutY="14.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <ComboBox fx:id="chb_TrierPar" layoutX="90.0" maxWidth="108.0" minWidth="108.0" prefHeight="23.0" prefWidth="108.0" />
+                  <Label maxHeight="22.0" maxWidth="100.0" minHeight="22.0" minWidth="100.0" prefHeight="22.0" prefWidth="100.0" text="Trier par :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </Group>
+            <Label layoutX="99.0" layoutY="11.0" maxHeight="22.0" maxWidth="100.0" minHeight="22.0" minWidth="100.0" prefHeight="22.0" prefWidth="100.0" text="Titre / Artiste" textFill="WHITE" AnchorPane.leftAnchor="127.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </Label>
          </children></AnchorPane>
       <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1200.0" style="-fx-background-color: #000000;" VBox.vgrow="NEVER">
          <children>
@@ -52,11 +77,25 @@
                         <Font name="Arial Rounded MT Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lbl_Auteur" layoutX="70.0" layoutY="42.0" text="Auteur" textFill="#787878" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="70.0">
-                     <font>
-                        <Font name="Arial Rounded MT Bold" size="11.0" />
-                     </font>
-                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="107.0" layoutY="22.0" prefHeight="14.0" prefWidth="300.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="70.0">
+                     <children>
+                        <Label fx:id="lbl_Auteur" text="Auteur" textFill="#787878">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text=", " textFill="#787878">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl_Album" text="Album" textFill="#787878">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="NEVER">
@@ -69,7 +108,7 @@
                   <Group layoutX="60.0" layoutY="32.0" AnchorPane.bottomAnchor="28.0">
                      <children>
                         <ProgressBar fx:id="psb_Timeline" layoutY="4.0" prefHeight="8.0" prefWidth="340.0" progress="${sli_Timeline.value}" />
-                        <Slider id="sli_Timelime" fx:id="sli_Timeline" focusTraversable="false" layoutX="-8.0" max="1.0" prefHeight="16.0" prefWidth="356.0" />
+                        <Slider id="sli_Timelime" fx:id="sli_Timeline" disable="true" focusTraversable="false" layoutX="-8.0" max="1.0" opacity="0.0" prefHeight="16.0" prefWidth="356.0" />
                      </children>
                   </Group>
                   <Label fx:id="lbl_TempsTot1" layoutX="410.0" layoutY="32.0" prefHeight="16.0" prefWidth="50.0" text="0:00" textFill="WHITE" AnchorPane.bottomAnchor="32.0">
@@ -88,7 +127,7 @@
                   </Button>
                   <Button fx:id="btn_Play" focusTraversable="false" layoutX="220.0" layoutY="20.0" mnemonicParsing="false" onAction="#btn_Play_Click" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="110.0">
                      <graphic>
-                        <SVGPath fx:id="svg_Play" content="M 0.3 0 Q 0 0 0 0.3 L 0 9.7 Q 0 10 0.3 10 L 1.7 10 Q 2 10 2 9.7 L 2 0.3 Q 2 0 1.7 0 M 5.3 0 Q 5 0 5 0.3 L 5 9.7 Q 5 10 5.3 10 L 6.7 10 Q 7 10 7 9.7 M 0.5 0 Q 0 0 0 0.5 L 0 9.5 Q 0 10 0.5 10 L 1.5 10 Q 2 10 2 9.5 L 2 0.5 Q 2 0 1.5 0 M 5.5 0 Q 5 0 5 0.5 L 5 9.5 Q 5 10 5.5 10 L 6.5 10 Q 7 10 7 9.5 L 7 0.5 Q 7 0 6.5 0L 7 0.3 Q 7 0 6.7 0" scaleX="1.8" scaleY="1.8" />
+                        <SVGPath fx:id="svg_Play" content="M 2.511 0.36 L 11.392 5.562 C 13.293 6.68 13.338 7.932 11.614 8.919 L 2.752 14.031 C 0.985 15.149 -0.066 14.59 -0.056 12.42 L -0.056 1.994 C -0.075 -0.168 0.786 -0.656 2.511 0.36M 2.511 0.36 L 11.392 5.562 C 13.293 6.68 13.338 7.932 11.614 8.919 L 2.752 14.031 C 0.985 15.149 -0.066 14.59 -0.056 12.42 L -0.056 1.994 C -0.075 -0.168 0.786 -0.656 2.511 0.36" scaleX="1.3" scaleY="1.3" />
                      </graphic>
                   </Button>
                   <Button fx:id="btn_Next" focusTraversable="false" layoutX="265.0" layoutY="26.0" mnemonicParsing="false" onAction="#btn_Next_Click" prefHeight="28.0" prefWidth="28.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="70.0">
