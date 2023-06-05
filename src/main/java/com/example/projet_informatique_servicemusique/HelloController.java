@@ -23,6 +23,7 @@ import javafx.util.Duration;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Comparator;
 import java.util.ResourceBundle;
@@ -88,9 +89,25 @@ public class HelloController implements Initializable {
         HBox.setHgrow(lbl_album, Priority.ALWAYS);
 
         // Mettre en forme l'image
-        String path = new File("src/main/resources/Pictures/" + Chemin + ".png").getAbsolutePath();
-        String path2 = new File("src/main/resources/Pictures/ImagePlay.png").getAbsolutePath();
-        image.setImage(new Image(path));
+        String path = "src/main/resources/Pictures/" + Chemin + ".png";
+        File imageFile = new File(path);
+        String localUrl = null;
+        try {
+            localUrl = imageFile.toURI().toURL().toString();
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
+
+        String path2 = "src/main/resources/Pictures/ImagePlay.png";
+        File imageFile2 = new File(path2);
+        String localUrl2 = null;
+        try {
+            localUrl2 = imageFile2.toURI().toURL().toString();
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
+
+        image.setImage(new Image(localUrl));
         image.setFitHeight(50);
         image.setFitWidth(50);
         image.setStyle("-fx-background-radius: 10px;");
@@ -118,15 +135,16 @@ public class HelloController implements Initializable {
         groupe.setAlignment(Pos.CENTER);
 
         // Faire en sorte que le play s'affiche
+        String finalLocalUrl2 = localUrl2;
         groupe.setOnMouseEntered(event -> {
             //ImageView image = (ImageView) groupe.getChildren().get(0);
-            image.setImage(new Image(path2)); // Changer l'image au survol
+            image.setImage(new Image(finalLocalUrl2)); // Changer l'image au survol
         });
 
-        String finalPath = path;
+        String finalLocalUrl = localUrl;
         groupe.setOnMouseExited(event -> {
             //ImageView image = (ImageView) groupe.getChildren().get(0);
-            image.setImage(new Image(finalPath)); // Rétablir l'image par défaut
+            image.setImage(new Image(finalLocalUrl)); // Rétablir l'image par défaut
         });
 
         // Detection du "click"
@@ -142,7 +160,7 @@ public class HelloController implements Initializable {
         return groupe;
     }
 
-    //Création d'objet pour lire la musique avec le chemin relatif
+    //Création d'objet pour lire la musique
     String music = new File("src/main/resources/Songs/Damso.mp3").getAbsolutePath();
     Media media = new Media(new File(music).toURI().toString());
     MediaPlayer mediaPlayer = new MediaPlayer(media);
@@ -235,7 +253,7 @@ public class HelloController implements Initializable {
         try (CSVReader csvReader = new CSVReader(new FileReader(new File("src/main/resources/BaseDonnee.csv").getAbsolutePath()), ';')) {
             String[] ligne;
             while ((ligne = csvReader.readNext()) != null) {
-                items.add(creerGroupe(ligne[0], ligne[1],ligne[2],ligne[3]));
+                items.add(creerGroupe(ligne[0],ligne[1],ligne[2],ligne[3]));
             }
         } catch (IOException e) {
             e.printStackTrace();

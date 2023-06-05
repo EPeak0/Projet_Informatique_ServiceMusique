@@ -53,6 +53,14 @@
     -fx-border-width: 0px;
 }
 
+.password-field {
+    -fx-background-color: null;
+    -fx-background-radius: 0px;
+    -fx-border-color: null;
+    -fx-border-radius: 0px;
+    -fx-border-width: 0px;
+}
+
 .list-view {
     -fx-background-radius: 20px;
 }
