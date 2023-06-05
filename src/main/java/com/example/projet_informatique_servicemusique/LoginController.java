@@ -56,9 +56,16 @@ public class LoginController {
     }
 
     @FXML
-    protected void svg_Logo_OnClick() {
-        if (txt_UserName.getText() == "admin") {
+    protected void svg_Logo_OnClick() throws IOException {
+        if (Objects.equals(txt_UserName.getText(), "admin") && Objects.equals(txt_Password.getText(), "admin")) {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("admin-view.fxml"));
+            Scene newScene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage) txt_UserName.getScene().getWindow();
+            stage.setTitle("TDT - Login");
+            stage.setScene(newScene);
+            stage.setResizable(false);
 
+            stage.show();
         }
     }
 
@@ -87,6 +94,7 @@ public class LoginController {
             Scene newScene = new Scene(fxmlLoader.load());
             Stage stage = (Stage) btn_Confirm.getScene().getWindow();
             stage.setTitle("TDT");
+            stage.setResizable(true);
             stage.setScene(newScene);
 
             //Définir une taille minimale pour la fenêtre

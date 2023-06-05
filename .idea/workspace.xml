@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81d90cc3-964e-4144-99f6-7e4baea42d9d" name="Changes" comment="Ajout de la page &quot;login-view&quot;">
+    <list default="true" id="81d90cc3-964e-4144-99f6-7e4baea42d9d" name="Changes" comment="Ajout de la page &quot;login-view&quot; 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/admin-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/login-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/UserList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UserList.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +29,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/17.0.6/javafx-graphics-17.0.6-sources.jar!/com/sun/javafx/scene/NodeHelper.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/17.0.6/javafx-graphics-17.0.6-sources.jar!/javafx/scene/Scene.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -109,7 +117,8 @@
       <workItem from="1685960321483" duration="26000" />
       <workItem from="1685960732570" duration="1021000" />
       <workItem from="1685962044457" duration="714000" />
-      <workItem from="1685968040725" duration="298000" />
+      <workItem from="1685968040725" duration="8330000" />
+      <workItem from="1685983687341" duration="198000" />
     </task>
     <task id="LOCAL-00001" summary="Bien avancé">
       <created>1685735630616</created>
@@ -132,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685960756140</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ajout de la page &quot;login-view&quot; 2">
+      <created>1685968461718</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685968461718</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +169,8 @@
     <MESSAGE value="Bien avancé" />
     <MESSAGE value="Bien avancé 2" />
     <MESSAGE value="Ajout de la page &quot;login-view&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la page &quot;login-view&quot;" />
+    <MESSAGE value="Ajout de la page &quot;login-view&quot; 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la page &quot;login-view&quot; 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

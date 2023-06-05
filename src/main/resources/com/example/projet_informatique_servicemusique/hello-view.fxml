@@ -18,7 +18,7 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@style.css" HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_informatique_servicemusique.HelloController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@style.css" HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_informatique_servicemusique.HelloController">
    <children>
       <AnchorPane prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: #000000;" VBox.vgrow="NEVER">
          <children>
@@ -118,19 +118,9 @@
             </AnchorPane>
             <AnchorPane prefHeight="80.0" prefWidth="370.0" HBox.hgrow="ALWAYS">
                <children>
-                  <Button fx:id="btn_Previous" focusTraversable="false" layoutX="180.0" layoutY="26.0" mnemonicParsing="false" onAction="#btn_Previous_Click" prefHeight="28.0" prefWidth="28.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="162.0">
-                     <graphic>
-                        <SVGPath fx:id="svg_Previous" content="M 2 -1 L -6 -6 V -1 H -8 V -12 H -6 V -7 L 2 -12" />
-                     </graphic>
-                  </Button>
-                  <Button fx:id="btn_Play" focusTraversable="false" layoutX="220.0" layoutY="20.0" mnemonicParsing="false" onAction="#btn_Play_Click" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="110.0">
+                  <Button fx:id="btn_Play" focusTraversable="false" layoutX="220.0" layoutY="20.0" mnemonicParsing="false" onAction="#btn_Play_Click" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="70.0">
                      <graphic>
                         <SVGPath fx:id="svg_Play" content="M 2.511 0.36 L 11.392 5.562 C 13.293 6.68 13.338 7.932 11.614 8.919 L 2.752 14.031 C 0.985 15.149 -0.066 14.59 -0.056 12.42 L -0.056 1.994 C -0.075 -0.168 0.786 -0.656 2.511 0.36M 2.511 0.36 L 11.392 5.562 C 13.293 6.68 13.338 7.932 11.614 8.919 L 2.752 14.031 C 0.985 15.149 -0.066 14.59 -0.056 12.42 L -0.056 1.994 C -0.075 -0.168 0.786 -0.656 2.511 0.36" scaleX="1.3" scaleY="1.3" />
-                     </graphic>
-                  </Button>
-                  <Button fx:id="btn_Next" focusTraversable="false" layoutX="265.0" layoutY="26.0" mnemonicParsing="false" onAction="#btn_Next_Click" prefHeight="28.0" prefWidth="28.0" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="70.0">
-                     <graphic>
-                        <SVGPath fx:id="svg_Next" content="M -2 1 L 6 6 V 1 H 8 V 12 H 6 V 7 L -2 12" />
                      </graphic>
                   </Button>
                </children>
