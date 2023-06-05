@@ -19,7 +19,7 @@
         <AnchorPane focusTraversable="true" prefHeight="180.0" prefWidth="400.0">
          <HBox alignment="CENTER" layoutX="118.0" layoutY="32.0" prefHeight="100.0" prefWidth="200.0" spacing="20">
             <children>
-                  <SVGPath content="M 0.611 0.36 L 9.492 5.562 C 11.393 6.68 11.438 7.932 9.714 8.919 L 0.852 14.031 C -0.915 15.149 -1.966 14.59 -1.956 12.42 L -1.956 1.994 C -1.975 -0.168 -1.114 -0.656 0.611 0.36" fill="WHITE" scaleX="2.6" scaleY="2.6" />
+                  <SVGPath content="M 0.611 0.36 L 9.492 5.562 C 11.393 6.68 11.438 7.932 9.714 8.919 L 0.852 14.031 C -0.915 15.149 -1.966 14.59 -1.956 12.42 L -1.956 1.994 C -1.975 -0.168 -1.114 -0.656 0.611 0.36" fill="WHITE" onMouseClicked="#svg_Logo_OnClick" scaleX="2.6" scaleY="2.6" />
                   <Label text="TDT" textFill="WHITE">
                       <font>
                           <Font name="Arial Rounded MT Bold" size="34.0" />

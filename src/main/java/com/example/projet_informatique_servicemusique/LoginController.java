@@ -55,6 +55,13 @@ public class LoginController {
         verificationUser();
     }
 
+    @FXML
+    protected void svg_Logo_OnClick() {
+        if (txt_UserName.getText() == "admin") {
+
+        }
+    }
+
     public boolean searchAndValidateUser(String userName, String hashedPassword) {
         try (CSVReader csvReader = new CSVReader(new FileReader(new File("src/main/resources/UserList.csv").getAbsolutePath()), ';')) {
             String[] ligne;
