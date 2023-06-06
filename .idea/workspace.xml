@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81d90cc3-964e-4144-99f6-7e4baea42d9d" name="Changes" comment="Ajout de la class &quot;Music&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloApplication.java" afterDir="false" />
+    <list default="true" id="81d90cc3-964e-4144-99f6-7e4baea42d9d" name="Changes" comment="Ajout des en-tête de fonction(non remplies)">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/Music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686031917581</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ajout des en-tête de fonction(non remplies)">
+      <created>1686053476136</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686053476136</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +188,8 @@
     <MESSAGE value="Ajout de la page &quot;login-view&quot; 2" />
     <MESSAGE value="Ajout de la page &quot;admin-view&quot; permettant d'ajouter des musiques dans la liste." />
     <MESSAGE value="Ajout de la class &quot;Music&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la class &quot;Music&quot;" />
+    <MESSAGE value="Ajout des en-tête de fonction(non remplies)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout des en-tête de fonction(non remplies)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

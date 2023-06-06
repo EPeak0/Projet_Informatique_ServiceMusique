@@ -88,13 +88,13 @@ public class HelloController implements Initializable {
     }
 
     /**
-     * Description de la fonction.
-     *
-     * @param music Description du paramètre 2.
+     * Description de la fonction :
+     * Fonction qui permet d'acutaliser la progressbar et le slider en fontion du temps.
+     * Il est possible d'avancer la musique en bougeant le slider.
+     * Il y a l'affichage du temps restant de la musique
      */
+    public void actualiseProgressBar() {
 
-    public void actualiseProgressBar(Music music) {
-            //Fonction pour ajuster la progressbar et le slider en fonction du temps
             mediaPlayer.currentTimeProperty().addListener((observable, oldValue, newValue) -> {
             double duration = mediaPlayer.getTotalDuration().toMillis();
             double remaining = duration - mediaPlayer.getCurrentTime().toMillis();
@@ -138,7 +138,7 @@ public class HelloController implements Initializable {
         sli_Timeline.setValue(newValue.toMillis()/duration);
     }
 
-    public void sliderDragged(Music music) {
+    public void sliderDragged() {
         sli_Timeline.setOnDragDetected(dragEvent -> {
             isSliderBeingDragged = true;
         });
@@ -185,8 +185,8 @@ public class HelloController implements Initializable {
     }
 
     /**
-     * Description de la fonction.
-     *
+     * Description de la fonction :
+     * Fonction qui permet de mettre pause ou de relancer la musique
      */
     @FXML
     protected void btn_Play_Click()
@@ -206,8 +206,8 @@ public class HelloController implements Initializable {
 
 
     /**
-     * Description de la fonction.
-     *
+     * Description de la fonction :
+     * Fonction qui permet de se LogOut de l'application (changement de scène)
      */
     @FXML
     protected void btn_LogOut_Click() throws IOException {
@@ -233,7 +233,7 @@ public class HelloController implements Initializable {
 
 
     /**
-     * Description de la fonction.
+     * Description de la fonction :
      *
      */
 

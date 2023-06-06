@@ -170,16 +170,6 @@ public class Music {
 
             LectureMusique(titre, auteur, album, fichier);
         });
-
-        /*
-        if (helloController.isAdmin) {
-            AnchorPane anchorPane = new AnchorPane();
-            HBox hBox = new HBox();
-            hBox.getChildren().addAll(hBox);
-            return hBox;
-        }
-        */
-
         return groupe;
     }
 
@@ -188,10 +178,10 @@ public class Music {
     /**
      * Description de la fonction.
      *
-     * @param Titre Description du paramètre 1.
-     * @param Auteur Description du paramètre 2.
-     * @param Album Description du paramètre 3.
-     * @param Chemin Description du paramètre 4.
+     * @param Titre Titre de la musique.
+     * @param Auteur Auteur de la musique.
+     * @param Album Album de la musique.
+     * @param Chemin Chemin absolue de la musique.
      */
     public void LectureMusique(String Titre, String Auteur, String Album, String Chemin)
     {
@@ -200,9 +190,9 @@ public class Music {
         helloController.playMedia();
 
         // Apparition du slider
-        helloController.sliderDragged(this);
+        helloController.sliderDragged();
 
         // Actualisation de la progressBar
-        helloController.actualiseProgressBar(this);
+        helloController.actualiseProgressBar();
     }
 }
