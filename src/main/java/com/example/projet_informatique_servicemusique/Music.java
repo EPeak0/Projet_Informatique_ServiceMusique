@@ -17,6 +17,7 @@ import javafx.scene.text.Font;
 
 import java.io.File;
 import java.net.MalformedURLException;
+import java.net.URL;
 
 public class Music {
     // Définition des attributs
@@ -183,6 +184,15 @@ public class Music {
     }
 
     // Création d'objet pour lire la musique
+
+    /**
+     * Description de la fonction.
+     *
+     * @param Titre Description du paramètre 1.
+     * @param Auteur Description du paramètre 2.
+     * @param Album Description du paramètre 3.
+     * @param Chemin Description du paramètre 4.
+     */
     public void LectureMusique(String Titre, String Auteur, String Album, String Chemin)
     {
         helloController.stopMedia();

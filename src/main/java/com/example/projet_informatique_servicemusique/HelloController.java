@@ -87,8 +87,15 @@ public class HelloController implements Initializable {
         lbl_Album.setText(Album);
     }
 
+    /**
+     * Description de la fonction.
+     *
+     * @param music Description du paramètre 2.
+     */
+
     public void actualiseProgressBar(Music music) {
-        mediaPlayer.currentTimeProperty().addListener((observable, oldValue, newValue) -> { //Fonction pour ajuster le progressbarre en fonction du temps
+            //Fonction pour ajuster la progressbar et le slider en fonction du temps
+            mediaPlayer.currentTimeProperty().addListener((observable, oldValue, newValue) -> {
             double duration = mediaPlayer.getTotalDuration().toMillis();
             double remaining = duration - mediaPlayer.getCurrentTime().toMillis();
             double progress = remaining / duration;
@@ -103,8 +110,9 @@ public class HelloController implements Initializable {
             });
 
             Duration remainingTime = Duration.millis(remaining);
-            String formattedRemainingTime = String.format("%02d:%02d", (int)remainingTime.toMinutes(), (int)remainingTime.toSeconds() % 60);
 
+            //Conversion des secondes en minutes et secondes
+            String formattedRemainingTime = String.format("%02d:%02d", (int)remainingTime.toMinutes(), (int)remainingTime.toSeconds() % 60);
             Duration Time = Duration.millis(mediaPlayer.getCurrentTime().toMillis());
             String RemainingTime = String.format("%02d:%02d", (int)Time.toMinutes(), (int)Time.toSeconds() % 60);
 
@@ -136,6 +144,13 @@ public class HelloController implements Initializable {
         });
     }
 
+
+    /**
+     * Description de la fonction.
+     *
+     * @param TitreDelete Description du paramètre 1.
+     * @param hbox Description du paramètre 2.
+     */
     public void SupprimerLigne(String TitreDelete, HBox hbox)
     {
         // Charger les données du fichier CSV dans une liste
@@ -165,10 +180,14 @@ public class HelloController implements Initializable {
             e.printStackTrace();
         }
 
-        // Supprimer l'instance dans l'Observable list
+        //Supprimer l'instance dans l'Observable list
         items.remove(hbox);
     }
 
+    /**
+     * Description de la fonction.
+     *
+     */
     @FXML
     protected void btn_Play_Click()
     {
@@ -185,6 +204,11 @@ public class HelloController implements Initializable {
         }
     }
 
+
+    /**
+     * Description de la fonction.
+     *
+     */
     @FXML
     protected void btn_LogOut_Click() throws IOException {
         // Arret de la lecture du média
@@ -206,6 +230,12 @@ public class HelloController implements Initializable {
 
         stage.show();
     }
+
+
+    /**
+     * Description de la fonction.
+     *
+     */
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
