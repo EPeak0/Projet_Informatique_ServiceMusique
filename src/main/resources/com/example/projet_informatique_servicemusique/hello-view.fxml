@@ -39,6 +39,11 @@
                   <Circle fill="WHITE" layoutX="250.0" layoutY="20.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
                </children>
             </Group>
+            <Button alignment="CENTER_RIGHT" layoutX="739.0" layoutY="37.0" mnemonicParsing="false" onAction="#btn_LogOut_Click" prefHeight="26.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="Log out" textFill="WHITE" underline="true" AnchorPane.rightAnchor="393.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="0.0" prefWidth="1200.0" style="-fx-background-color: #000000;" VBox.vgrow="ALWAYS">

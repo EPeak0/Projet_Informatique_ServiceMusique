@@ -58,14 +58,24 @@ public class LoginController {
     @FXML
     protected void svg_Logo_OnClick() throws IOException {
         if (Objects.equals(txt_UserName.getText(), "admin") && Objects.equals(txt_Password.getText(), "admin")) {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("admin-view.fxml"));
+            // On marque l'utilisateur comme admin
+            HelloController.isAdmin = true;
+
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
             Scene newScene = new Scene(fxmlLoader.load());
-            Stage stage = (Stage) txt_UserName.getScene().getWindow();
-            stage.setTitle("TDT - Login");
+            Stage stage = (Stage) btn_Confirm.getScene().getWindow();
+            stage.setTitle("TDT");
+            stage.setResizable(true);
             stage.setScene(newScene);
-            stage.setResizable(false);
+
+            //Définir une taille minimale pour la fenêtre
+            stage.setMinWidth(1000);
+            stage.setMinHeight(500);
+            stage.setHeight(1200);
+            stage.setHeight(800);
 
             stage.show();
+
         }
     }
 
@@ -89,6 +99,9 @@ public class LoginController {
         isAutorised = searchAndValidateUser(txt_UserName.getText(), txt_Password.getText());
 
         if (isAutorised) {
+            // On marque l'utilisateur commme pas admin
+            HelloController.isAdmin = false;
+
             // Si autorisé, on affiche la page "hello-view"
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
             Scene newScene = new Scene(fxmlLoader.load());
@@ -100,6 +113,8 @@ public class LoginController {
             //Définir une taille minimale pour la fenêtre
             stage.setMinWidth(1000);
             stage.setMinHeight(500);
+            stage.setHeight(1200);
+            stage.setHeight(800);
 
             stage.show();
         }

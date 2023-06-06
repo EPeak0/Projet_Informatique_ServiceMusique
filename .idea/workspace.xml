@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81d90cc3-964e-4144-99f6-7e4baea42d9d" name="Changes" comment="Ajout de la page &quot;login-view&quot; 2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/admin-view.fxml" afterDir="false" />
+    <list default="true" id="81d90cc3-964e-4144-99f6-7e4baea42d9d" name="Changes" comment="Ajout de la page &quot;admin-view&quot; permettant d'ajouter des musiques dans la liste.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/Music.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/UserList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UserList.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +117,8 @@
       <workItem from="1685960732570" duration="1021000" />
       <workItem from="1685962044457" duration="714000" />
       <workItem from="1685968040725" duration="8330000" />
-      <workItem from="1685983687341" duration="198000" />
+      <workItem from="1685983687341" duration="14132000" />
+      <workItem from="1686028258351" duration="1692000" />
     </task>
     <task id="LOCAL-00001" summary="Bien avancé">
       <created>1685735630616</created>
@@ -148,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685968461718</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ajout de la page &quot;admin-view&quot; permettant d'ajouter des musiques dans la liste.">
+      <created>1685983927242</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685983927242</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +177,8 @@
     <MESSAGE value="Bien avancé 2" />
     <MESSAGE value="Ajout de la page &quot;login-view&quot;" />
     <MESSAGE value="Ajout de la page &quot;login-view&quot; 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la page &quot;login-view&quot; 2" />
+    <MESSAGE value="Ajout de la page &quot;admin-view&quot; permettant d'ajouter des musiques dans la liste." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la page &quot;admin-view&quot; permettant d'ajouter des musiques dans la liste." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
