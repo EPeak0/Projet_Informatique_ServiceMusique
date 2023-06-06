@@ -1,6 +1,7 @@
 package com.example.projet_informatique_servicemusique;
 
 import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
 import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
@@ -20,10 +21,12 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class HelloController implements Initializable {
@@ -130,6 +133,36 @@ public class HelloController implements Initializable {
         sli_Timeline.setOnDragDetected(dragEvent -> {
             isSliderBeingDragged = true;
         });
+    }
+
+    public void SupprimerLigne(String TitreDelete)
+    {
+        // Charger les données du fichier CSV dans une liste
+        List<String[]> lignes = new ArrayList<>();
+        try (CSVReader reader = new CSVReader(new FileReader(new File("src/main/resources/BaseDonnee.csv").getAbsolutePath()),';')) {
+            String[] ligne;
+            while ((ligne = reader.readNext()) != null) {
+                lignes.add(ligne);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Supprimer les lignes correspondantes
+        List<String[]> lignesASupprimer = new ArrayList<>();
+        for (String[] ligne : lignes) {
+            if (ligne[0].equals(TitreDelete)) {
+                lignesASupprimer.add(ligne);
+            }
+        }
+        lignes.removeAll(lignesASupprimer);
+
+        // Réécrire le fichier CSV avec les lignes mises à jour
+        try (CSVWriter writer = new CSVWriter(new FileWriter(new File("src/main/resources/BaseDonnee.csv").getAbsolutePath()),';')) {
+            writer.writeAll(lignes);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

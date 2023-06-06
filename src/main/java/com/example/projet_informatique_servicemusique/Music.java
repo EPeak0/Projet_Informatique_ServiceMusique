@@ -1,5 +1,7 @@
 package com.example.projet_informatique_servicemusique;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -143,6 +145,18 @@ public class Music {
             //ImageView image = (ImageView) groupe.getChildren().get(0);
             image.setImage(new Image(finalLocalUrl)); // Rétablir l'image par défaut
         });
+
+        //Suppression de ligne
+        btn_Delete.setOnAction(new EventHandler<ActionEvent>()
+        {
+            @Override
+            public void handle(ActionEvent event)
+        {
+            // Code à exécuter lorsque le bouton est cliqué
+            helloController.SupprimerLigne(titre);
+        }
+        });
+
 
         // Detection du "click"
         groupe.setOnMouseClicked(event -> {
