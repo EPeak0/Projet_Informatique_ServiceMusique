@@ -54,6 +54,7 @@ public class HelloController implements Initializable {
     @FXML
     protected SVGPath svg_Play;
     protected boolean isSliderBeingDragged = false;
+    ObservableList<HBox> items = FXCollections.observableArrayList();
     MediaPlayer mediaPlayer = new MediaPlayer(new Media(new File(new File("src/main/resources/Songs/Damso.mp3").getAbsolutePath()).toURI().toString()));
     public static boolean isAdmin = false;
 
@@ -135,7 +136,7 @@ public class HelloController implements Initializable {
         });
     }
 
-    public void SupprimerLigne(String TitreDelete)
+    public void SupprimerLigne(String TitreDelete, HBox hbox)
     {
         // Charger les données du fichier CSV dans une liste
         List<String[]> lignes = new ArrayList<>();
@@ -163,6 +164,9 @@ public class HelloController implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        // Supprimer l'instance dans l'Observable list
+        items.remove(hbox);
     }
 
     @FXML
@@ -205,7 +209,6 @@ public class HelloController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        ObservableList<HBox> items = FXCollections.observableArrayList();
         ArrayList<Music> instances = new ArrayList<>();
         try (CSVReader csvReader = new CSVReader(new FileReader(new File("src/main/resources/BaseDonnee.csv").getAbsolutePath()), ';')) {
             String[] ligne;
@@ -221,7 +224,6 @@ public class HelloController implements Initializable {
 
         // Ajouter la ligne d'ajout pour l'admin
         // TODO
-        // instances.add(new Music(ligne[0], ligne[1], "add album", "add album", this);
 
         FilteredList<HBox> filteredItems = new FilteredList<>(items);
         SortedList<HBox> sortedList = new SortedList<>(filteredItems);
@@ -306,13 +308,4 @@ public class HelloController implements Initializable {
         });
     }
 
-    private static class NoMarginListCell extends ListCell<HBox> {
-        @Override
-        protected void updateItem(HBox item, boolean empty) {
-            super.updateItem(item, empty);
-            setGraphic(item);
-            setPadding(new javafx.geometry.Insets(0));
-            setStyle("-fx-background-radius: 10; -fx-background-color: rgb(0,0,0,0);");
-        }
-    }
 }

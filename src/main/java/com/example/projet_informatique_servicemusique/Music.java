@@ -25,6 +25,7 @@ public class Music {
     String album;
     String fichier;
     HelloController helloController;
+    HBox groupe = new HBox();
 
     // Constructeur
     Music(String titre, String auteur, String album, String fichier, HelloController helloController) {
@@ -126,7 +127,6 @@ public class Music {
 
 
         // Preparation de la HBox
-        HBox groupe = new HBox();
         groupe.setPadding(new Insets(0,0,0,0));
         groupe.setStyle("-fx-background-radius: 10;");
         groupe.getChildren().addAll(image, titreArtiste, lbl_album, btn_Confirm, btn_Delete);
@@ -139,6 +139,8 @@ public class Music {
             //ImageView image = (ImageView) groupe.getChildren().get(0);
             image.setImage(new Image(finalLocalUrl2)); // Changer l'image au survol
         });
+
+
 
         String finalLocalUrl = localUrl;
         groupe.setOnMouseExited(event -> {
@@ -153,7 +155,7 @@ public class Music {
             public void handle(ActionEvent event)
         {
             // Code à exécuter lorsque le bouton est cliqué
-            helloController.SupprimerLigne(titre);
+            helloController.SupprimerLigne(titre, groupe);
         }
         });
 

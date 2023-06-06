@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81d90cc3-964e-4144-99f6-7e4baea42d9d" name="Changes" comment="Ajout de la class &quot;Music&quot;">
+    <list default="true" id="81d90cc3-964e-4144-99f6-7e4baea42d9d" name="Changes" comment="Ajout de la class &quot;Music&quot; et correction de diverses problèmes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/Music.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" afterDir="false" />
@@ -114,7 +115,7 @@
       <workItem from="1685962044457" duration="714000" />
       <workItem from="1685968040725" duration="8330000" />
       <workItem from="1685983687341" duration="14132000" />
-      <workItem from="1686028258351" duration="6426000" />
+      <workItem from="1686028258351" duration="8411000" />
     </task>
     <task id="LOCAL-00001" summary="Bien avancé">
       <created>1685735630616</created>
@@ -158,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686031917581</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ajout de la class &quot;Music&quot; et correction de diverses problèmes">
+      <created>1686047364882</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686047364882</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +190,8 @@
     <MESSAGE value="Ajout de la page &quot;login-view&quot; 2" />
     <MESSAGE value="Ajout de la page &quot;admin-view&quot; permettant d'ajouter des musiques dans la liste." />
     <MESSAGE value="Ajout de la class &quot;Music&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la class &quot;Music&quot;" />
+    <MESSAGE value="Ajout de la class &quot;Music&quot; et correction de diverses problèmes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la class &quot;Music&quot; et correction de diverses problèmes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
