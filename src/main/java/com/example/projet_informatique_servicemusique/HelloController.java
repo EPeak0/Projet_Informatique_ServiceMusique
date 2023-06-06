@@ -150,6 +150,9 @@ public class HelloController implements Initializable {
 
     @FXML
     protected void btn_LogOut_Click() throws IOException {
+        // Arret de la lecture du média
+        stopMedia();
+
         isAdmin = false;
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login-view.fxml"));
@@ -237,7 +240,20 @@ public class HelloController implements Initializable {
             lsv_ListeMusique.setItems(sortedList);
         });
 
-        lsv_ListeMusique.setCellFactory(param -> new NoMarginListCell());
+        lsv_ListeMusique.setCellFactory(param -> new ListCell<HBox>() {
+            @Override
+            protected void updateItem(HBox item, boolean empty) {
+                super.updateItem(item, empty);
+
+                setMaxWidth(lsv_ListeMusique.getWidth()); // Définir la largeur maximale sur la largeur de la ListView
+                setGraphic(item);
+                setPadding(new javafx.geometry.Insets(0));
+                setStyle("-fx-background-radius: 10; -fx-background-color: rgb(0,0,0,0);");
+                setMaxWidth(lsv_ListeMusique.getWidth()); // Définir la largeur maximale sur la largeur de la ListView
+            }
+        });
+
+        //lsv_ListeMusique.setCellFactory(param -> new NoMarginListCell());
         lsv_ListeMusique.setPadding(new Insets(40,20,0,37));
         lsv_ListeMusique.setFixedCellSize(70);
 

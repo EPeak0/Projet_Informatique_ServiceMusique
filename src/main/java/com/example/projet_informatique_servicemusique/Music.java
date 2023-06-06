@@ -2,10 +2,12 @@ package com.example.projet_informatique_servicemusique;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.control.Button;
 import javafx.scene.control.Separator;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
@@ -37,6 +39,8 @@ public class Music {
         TextField lbl_artiste = new TextField(auteur);
         TextField lbl_album = new TextField(album);
         ImageView image = new ImageView();
+        Button btn_Delete = new Button();
+        Button btn_Confirm = new Button();
 
         // Definition de la police d'écriture
         Font fontBig = Font.font("Arial Rounded MT Bold", 18);
@@ -57,7 +61,7 @@ public class Music {
         lbl_album.setFont(font);
         lbl_album.setPadding(new Insets(0,0,0,0));
         lbl_album.setAlignment(Pos.CENTER_LEFT);
-        lbl_album.setPrefWidth(700);
+        lbl_album.setPrefWidth(350);
         HBox.setHgrow(lbl_album, Priority.ALWAYS);
 
         // Bloquer la modification de ceci si l'utilisateur n'est pas admin
@@ -65,6 +69,18 @@ public class Music {
             lbl_Titre.setEditable(false);
             lbl_artiste.setEditable(false);
             lbl_album.setEditable(false);
+        }
+
+        // Mettre les boutons de l'admin (supprimer et confirmer)
+        if (HelloController.isAdmin) {
+            btn_Delete.setText("Delete");
+            btn_Confirm.setText("Confirm");
+        }
+        else {
+            btn_Delete.setDisable(true);
+            btn_Confirm.setDisable(true);
+            btn_Delete.setOpacity(0);
+            btn_Confirm.setOpacity(0);
         }
 
         // Mettre en forme l'image
@@ -96,7 +112,7 @@ public class Music {
         VBox titreArtiste = new VBox();
         titreArtiste.setPadding(new Insets(0,0,0,0));
         titreArtiste.getChildren().addAll(lbl_Titre, lbl_artiste);
-        titreArtiste.setPrefWidth(400);
+        titreArtiste.setPrefWidth(350);
         titreArtiste.setAlignment(Pos.CENTER_LEFT);
         HBox.setHgrow(titreArtiste, Priority.ALWAYS);
 
@@ -106,11 +122,13 @@ public class Music {
         separator.setFocusTraversable(false);
         separator.setVisible(false);
 
+
         // Preparation de la HBox
         HBox groupe = new HBox();
         groupe.setPadding(new Insets(0,0,0,0));
         groupe.setStyle("-fx-background-radius: 10;");
-        groupe.getChildren().addAll(image, titreArtiste, lbl_album);
+        groupe.getChildren().addAll(image, titreArtiste, lbl_album, btn_Confirm, btn_Delete);
+
         groupe.setAlignment(Pos.CENTER);
 
         // Faire en sorte que le play s'affiche
@@ -135,6 +153,15 @@ public class Music {
 
             LectureMusique(titre, auteur, album, fichier);
         });
+
+        /*
+        if (helloController.isAdmin) {
+            AnchorPane anchorPane = new AnchorPane();
+            HBox hBox = new HBox();
+            hBox.getChildren().addAll(hBox);
+            return hBox;
+        }
+        */
 
         return groupe;
     }
