@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
@@ -9,17 +8,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0" spacing="10" style="-fx-background-color: #000000;" stylesheets="@style.css" HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_informatique_servicemusique.LoginController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0" spacing="20.0" style="-fx-background-color: #000000;" stylesheets="@style.css" HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_informatique_servicemusique.LoginController">
     <children>
-        <AnchorPane focusTraversable="true" prefHeight="180.0" prefWidth="400.0">
+        <AnchorPane focusTraversable="true" prefHeight="160.0" prefWidth="400.0">
          <HBox alignment="CENTER" layoutX="118.0" layoutY="32.0" prefHeight="100.0" prefWidth="200.0" spacing="20">
             <children>
-                  <SVGPath content="M 0.611 0.36 L 9.492 5.562 C 11.393 6.68 11.438 7.932 9.714 8.919 L 0.852 14.031 C -0.915 15.149 -1.966 14.59 -1.956 12.42 L -1.956 1.994 C -1.975 -0.168 -1.114 -0.656 0.611 0.36" fill="WHITE" onMouseClicked="#svg_Logo_OnClick" scaleX="2.6" scaleY="2.6" />
+                  <SVGPath content="M 0.611 0.36 L 9.492 5.562 C 11.393 6.68 11.438 7.932 9.714 8.919 L 0.852 14.031 C -0.915 15.149 -1.966 14.59 -1.956 12.42 L -1.956 1.994 C -1.975 -0.168 -1.114 -0.656 0.611 0.36" fill="#ff8000" onMouseClicked="#svg_Logo_OnClick" scaleX="2.6" scaleY="2.6" />
                   <Label text="TDT" textFill="WHITE">
                       <font>
                           <Font name="Arial Rounded MT Bold" size="34.0" />
@@ -31,32 +28,30 @@
             </padding>
          </HBox>
         </AnchorPane>
-        <Group layoutX="840.0" layoutY="30.0" AnchorPane.rightAnchor="70.0">
-            <children>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
-                <Circle fill="WHITE" layoutY="20.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                <TextField fx:id="txt_UserName" alignment="BOTTOM_LEFT" focusTraversable="false" layoutX="-6.0" layoutY="9.0" onAction="#txt_UserName_OnAction" prefHeight="23.0" prefWidth="250.0" promptText="Username">
-                    <font>
-                        <Font name="Arial Rounded MT Bold" size="12.0" />
-                    </font>
-                </TextField>
-                <Circle fill="WHITE" layoutX="250.0" layoutY="20.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-            </children>
-        </Group>
-        <Group layoutX="840.0" layoutY="30.0" AnchorPane.rightAnchor="70.0">
-            <children>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
-                <Circle fill="WHITE" layoutY="20.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                <Circle fill="WHITE" layoutX="250.0" layoutY="20.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-            <PasswordField fx:id="txt_Password" focusTraversable="false" layoutX="-6.0" layoutY="9.0" onAction="#txt_Password_OnAction" prefHeight="23.0" prefWidth="250.0" promptText="Password">
-               <font>
+          <TextField fx:id="txt_UserName" focusTraversable="false" maxHeight="40.0" minHeight="40.0" onAction="#txt_UserName_OnAction" prefHeight="40.0" prefWidth="250.0" promptText="Username" style="-fx-background-color: #ffffff; -fx-background-radius: 15;">
+              <font>
                   <Font name="Arial Rounded MT Bold" size="12.0" />
-               </font>
-            </PasswordField>
-            </children>
-        </Group>
+              </font>
+         <VBox.margin>
+            <Insets left="50.0" right="50.0" />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+          </TextField>
+      <PasswordField fx:id="txt_Password" focusTraversable="false" maxHeight="40.0" minHeight="40.0" onAction="#txt_Password_OnAction" prefHeight="40.0" prefWidth="250.0" promptText="Password" style="-fx-background-color: #ffffff; -fx-background-radius: 15;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="50.0" right="50.0" />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </PasswordField>
         <AnchorPane prefHeight="180.0" prefWidth="400.0">
-         <Button fx:id="btn_Confirm" focusTraversable="false" layoutX="174.0" layoutY="59.0" mnemonicParsing="false" onAction="#btn_Confirm_Click" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 27;">
+         <Button fx:id="btn_Confirm" focusTraversable="false" layoutX="174.0" layoutY="59.0" mnemonicParsing="false" onAction="#btn_Confirm_Click" prefHeight="54.0" prefWidth="54.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 27;" AnchorPane.bottomAnchor="50.0">
             <graphic>
                   <SVGPath content="M 0.611 0.36 L 9.492 5.562 C 11.393 6.68 11.438 7.932 9.714 8.919 L 0.852 14.031 C -0.915 15.149 -1.966 14.59 -1.956 12.42 L -1.956 1.994 C -1.975 -0.168 -1.114 -0.656 0.611 0.36" scaleX="1.6" scaleY="1.6" />
             </graphic>

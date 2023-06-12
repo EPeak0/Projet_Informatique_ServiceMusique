@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #000000;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_informatique_servicemusique.AddController">
+   <children>
+      <VBox prefHeight="420.0" prefWidth="800.0">
+         <children>
+            <Label fx:id="lbl_TitrePage" text="Ajouter un titre" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="34.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="38.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="290.0" prefWidth="800.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="500.0" spacing="30.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="0.0" prefWidth="0.0" spacing="20.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" maxHeight="22.0" maxWidth="70.0" minHeight="22.0" minWidth="70.0" prefHeight="22.0" prefWidth="70.0" text="Titre" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txt_Titre" focusTraversable="false" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="300.0" promptText="Titre" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="0.0" prefWidth="0.0" spacing="20.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" maxHeight="22.0" maxWidth="70.0" minHeight="22.0" minWidth="70.0" prefHeight="22.0" prefWidth="70.0" text="Artiste" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txt_Artiste" focusTraversable="false" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="300.0" promptText="Artiste" style="-fx-background-color: #ffffff; -fx-background-radius: 15;">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="0.0" prefWidth="0.0" spacing="20.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" maxHeight="22.0" maxWidth="70.0" minHeight="22.0" minWidth="70.0" prefHeight="22.0" prefWidth="70.0" text="Album" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txt_Album" focusTraversable="false" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="300.0" promptText="Album" style="-fx-background-color: #ffffff; -fx-background-radius: 15;">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="24.0" left="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="38.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="370.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="120.0" prefWidth="370.0" spacing="20.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" maxHeight="22.0" maxWidth="100.0" minHeight="22.0" minWidth="61.0" prefHeight="22.0" prefWidth="61.0" text="Image" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="img_ImageFile" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../../../Pictures/ImageExemple.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="30.0" right="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="370.0" spacing="20.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" maxHeight="22.0" maxWidth="100.0" minHeight="22.0" minWidth="61.0" prefHeight="22.0" prefWidth="61.0" text="Song file" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_SongFile" alignment="CENTER" maxHeight="40.0" maxWidth="120.0" minHeight="40.0" minWidth="120.0" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 15; -fx-background-radius: 15;" text="Drag and drop" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="30.0" right="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets top="38.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="800.0" spacing="30.0">
+               <children>
+                  <Button fx:id="btn_SaveContinue" alignment="CENTER" mnemonicParsing="false" onAction="#btn_SaveContinue_Click" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #FFFFFF; -fx-border-radius: 15;" text="Enregister et continuer" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#btn_SaveQuit_Click" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" text="Enregister et quitter">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="16.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

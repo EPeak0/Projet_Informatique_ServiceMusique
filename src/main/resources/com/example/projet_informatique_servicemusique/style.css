@@ -1,6 +1,11 @@
 .button:hover {
-    -fx-scale-x: 1.1;
-    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.08;
+    -fx-scale-y: 1.08;
+}
+
+.button:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
 }
 
 .progress-bar {
@@ -35,7 +40,7 @@
     -fx-border-color: #00FF00;
     -fx-border-radius: 0px;
     -fx-background-insets: 0;
-    -fx-background-radius: 4px;
+    -fx-background-radius: 4;
 }
 
 .slider .track {
@@ -43,6 +48,10 @@
     -fx-background-insets: 1 0 -1 0, 0, 1;
     -fx-background-radius: 2.5, 2.5, 1.5;
     -fx-padding: 0.208333em; /* 2.5 */
+}
+
+.slider:hover .thumb {
+    -fx-background-color: #FF8000;
 }
 
 .text-field {

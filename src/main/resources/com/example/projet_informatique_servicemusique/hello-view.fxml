@@ -10,15 +10,15 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@style.css" HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_informatique_servicemusique.HelloController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@style.css" HBox.hgrow="ALWAYS" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_informatique_servicemusique.HelloController">
    <children>
       <AnchorPane prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: #000000;" VBox.vgrow="NEVER">
          <children>
@@ -26,24 +26,20 @@
                <font>
                   <Font name="Arial Rounded MT Bold" size="34.0" />
                </font></Label>
-            <SVGPath content="M 0.611 0.36 L 9.492 5.562 C 11.393 6.68 11.438 7.932 9.714 8.919 L 0.852 14.031 C -0.915 15.149 -1.966 14.59 -1.956 12.42 L -1.956 1.994 C -1.975 -0.168 -1.114 -0.656 0.611 0.36" fill="WHITE" layoutX="70.0" layoutY="44.0" scaleX="2.6" scaleY="2.6" />
-            <Group layoutX="840.0" layoutY="30.0" AnchorPane.rightAnchor="70.0">
-               <children>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
-                  <Circle fill="WHITE" layoutY="20.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                  <TextField fx:id="txt_Recherche" alignment="BOTTOM_LEFT" focusTraversable="false" layoutX="-6.0" layoutY="9.0" prefHeight="23.0" prefWidth="250.0" promptText="Recherche">
-                     <font>
-                        <Font name="Arial Rounded MT Bold" size="12.0" />
-                     </font>
-                  </TextField>
-                  <Circle fill="WHITE" layoutX="250.0" layoutY="20.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-               </children>
-            </Group>
-            <Button alignment="CENTER_RIGHT" layoutX="739.0" layoutY="37.0" mnemonicParsing="false" onAction="#btn_LogOut_Click" prefHeight="26.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="Log out" textFill="WHITE" underline="true" AnchorPane.rightAnchor="393.0">
+            <SVGPath content="M 0.611 0.36 L 9.492 5.562 C 11.393 6.68 11.438 7.932 9.714 8.919 L 0.852 14.031 C -0.915 15.149 -1.966 14.59 -1.956 12.42 L -1.956 1.994 C -1.975 -0.168 -1.114 -0.656 0.611 0.36" fill="#ff8000" layoutX="70.0" layoutY="44.0" scaleX="2.6" scaleY="2.6" />
+            <Button alignment="CENTER" focusTraversable="false" layoutX="739.0" layoutY="37.0" mnemonicParsing="false" onAction="#btn_LogOut_Click" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: #ffffff; -fx-border-radius: 15;" text="Log out" textFill="WHITE" AnchorPane.rightAnchor="380.0" AnchorPane.topAnchor="31.0">
                <font>
                   <Font name="Arial Rounded MT Bold" size="12.0" />
                </font>
             </Button>
+            <TextField fx:id="txt_Recherche" focusTraversable="false" layoutX="863.0" layoutY="30.0" prefHeight="40.0" prefWidth="280.0" promptText="Recherche" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </TextField>
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="0.0" prefWidth="1200.0" style="-fx-background-color: #000000;" VBox.vgrow="ALWAYS">
@@ -71,16 +67,21 @@
                   <Insets right="20.0" />
                </padding>
             </Label>
+            <Button fx:id="btn_Ajouter" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="56.0" layoutY="-4.0" maxHeight="45.0" maxWidth="46.0" mnemonicParsing="false" onAction="#btn_Ajouter_Click" prefHeight="45.0" prefWidth="46.0" style="-fx-background-color: transparent;" text="+" textFill="WHITE" AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="-4.0">
+               <font>
+                  <Font name="Arial" size="28.0" />
+               </font>
+            </Button>
          </children></AnchorPane>
       <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1200.0" style="-fx-background-color: #000000;" VBox.vgrow="NEVER">
          <children>
             <AnchorPane prefHeight="80.0" prefWidth="370.0" HBox.hgrow="ALWAYS">
                <children>
-                  <Label fx:id="lbl_Titre" layoutX="70.0" layoutY="18.0" text="Titre" textFill="WHITE" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="70.0">
+                  <Label fx:id="lbl_Titre" layoutX="70.0" layoutY="18.0" text="Titre" textFill="WHITE" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="129.0">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="18.0" />
                      </font></Label>
-                  <HBox alignment="CENTER_LEFT" layoutX="107.0" layoutY="22.0" prefHeight="14.0" prefWidth="300.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="70.0">
+                  <HBox alignment="CENTER_LEFT" layoutX="107.0" layoutY="22.0" prefHeight="14.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="129.0">
                      <children>
                         <Label fx:id="lbl_Auteur" text="Auteur" textFill="#787878">
                            <font>
@@ -99,6 +100,11 @@
                         </Label>
                      </children>
                   </HBox>
+                  <ImageView fx:id="img_currentImage" fitHeight="50.0" fitWidth="50.0" layoutX="70.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="56.0">
+                     <image>
+                        <Image url="@../../../Pictures/ImageExemple.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="NEVER">

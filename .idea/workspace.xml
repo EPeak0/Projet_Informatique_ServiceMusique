@@ -4,11 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81d90cc3-964e-4144-99f6-7e4baea42d9d" name="Changes" comment="Ajout de la class &quot;Music&quot; et correction de diverses problèmes">
+    <list default="true" id="81d90cc3-964e-4144-99f6-7e4baea42d9d" name="Changes" comment="Quelques mineurs améliorations. (PaDuTou : Nouveau système pour l'ajout et la musique. Il est maintenant possible d'importer des médias depuis l'application. La fonction de suppression de musique a été adapté pour supprimer les fichiers d'image et de musique. + Beaucoups de bugs ou problèmes on été corrigée)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/AddController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/ConfirmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Pictures/Capture d’écran 2023-06-07 à 22.04.57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Pictures/ImageExemple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Pictures/incompatibleImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Pictures/unnamed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - ATTLAS &amp; Jodie Knight - Used To The Silence [Monstercat Release] (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Daydreaming (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Ed Sheeran - Borderline [Official Lyric Video] (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Ed Sheeran - Salt Water [Official Lyric Video] (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - HYPHN &amp; f i l i l a - Speed Of Sound (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Kygo - Say Say Say (Lyric Video) ft. Paul McCartney, Michael Jackson (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Nature's Temple (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Noche de paz Gipsy Latino (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Nocif (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Overgrown (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Post Malone - rockstar (Lyrics) ft. 21 Savage (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Post Malone, The Weeknd - One Right Now (Audio) (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Tenno - Dragonfly (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Tenno - Luna (3 AM. Study Session) (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Tenno - The Guiding Wind (Soothing Breeze) (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Vindu - Blood Oath [japanese lofi_chillhop] (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Winter Morning - purrple cat (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - mark veins - Compulsion (320 kbps).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/add-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/confirm-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_05_2023_12_52_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_05_2023_12_52__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/AdminController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/Music.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Pictures/ImagePlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Songs/rockstar.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/UserList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UserList.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/admin-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/login-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +71,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2QbpnLj1inLiDVXa8MGX0BVA22p" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,6 +84,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
@@ -52,15 +93,16 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/diegomoreno/Documents/Travaux en cours/Informatique/Projet_Informatique_ServiceMusique&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/diegomoreno/Documents/Travaux en cours/Informatique/Projet_Informatique_ServiceMusique/src/main/resources/com/example/projet_informatique_servicemusique&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.22183909&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -73,10 +115,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique" />
       <recent name="F:\HES\Informatique2emesemestre\Projet_Informatique_ServiceMusique3\Projet_Informatique_ServiceMusique\src\main\resources\Pictures" />
       <recent name="F:\HES\Informatique2emesemestre\Projet_Informatique_ServiceMusique3\Projet_Informatique_ServiceMusique\src\main\resources\Songs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/Pictures" />
       <recent name="F:\HES\Informatique2emesemestre\Projet_Informatique_ServiceMusique3\Projet_Informatique_ServiceMusique\src\main\resources\Songs" />
       <recent name="F:\HES\Informatique2emesemestre\Projet_Informatique_ServiceMusique3\Projet_Informatique_ServiceMusique\src\main\resources\Pictures" />
     </key>
@@ -115,7 +159,21 @@
       <workItem from="1685962044457" duration="714000" />
       <workItem from="1685968040725" duration="8330000" />
       <workItem from="1685983687341" duration="14132000" />
-      <workItem from="1686028258351" duration="8411000" />
+      <workItem from="1686028258351" duration="13207000" />
+      <workItem from="1686062999259" duration="3893000" />
+      <workItem from="1686076014365" duration="2355000" />
+      <workItem from="1686118263804" duration="1471000" />
+      <workItem from="1686120202367" duration="1052000" />
+      <workItem from="1686156336048" duration="8318000" />
+      <workItem from="1686211968610" duration="1075000" />
+      <workItem from="1686213049651" duration="12698000" />
+      <workItem from="1686242480220" duration="18096000" />
+      <workItem from="1686307015787" duration="12479000" />
+      <workItem from="1686341638452" duration="865000" />
+      <workItem from="1686342529163" duration="37577000" />
+      <workItem from="1686511820393" duration="10623000" />
+      <workItem from="1686566820261" duration="610000" />
+      <workItem from="1686571520487" duration="432000" />
     </task>
     <task id="LOCAL-00001" summary="Bien avancé">
       <created>1685735630616</created>
@@ -166,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686047364882</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ajout de la fonction de suppression de ligne">
+      <created>1686049476934</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686049476934</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +249,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Bien avancé" />
     <MESSAGE value="Bien avancé 2" />
     <MESSAGE value="Ajout de la page &quot;login-view&quot;" />
@@ -191,7 +257,19 @@
     <MESSAGE value="Ajout de la page &quot;admin-view&quot; permettant d'ajouter des musiques dans la liste." />
     <MESSAGE value="Ajout de la class &quot;Music&quot;" />
     <MESSAGE value="Ajout de la class &quot;Music&quot; et correction de diverses problèmes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la class &quot;Music&quot; et correction de diverses problèmes" />
+    <MESSAGE value="Ajout de la fonction de suppression de ligne" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la fonction de suppression de ligne" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/17.0.6/javafx-fxml-17.0.6-mac.jar!/javafx/fxml/FXML.class</url>
+          <line>14</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
