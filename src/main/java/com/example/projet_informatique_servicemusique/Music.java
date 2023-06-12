@@ -48,7 +48,7 @@ public class Music {
     Button btn_Delete;
     Button btn_Confirm;
     SVGPath svgModify;
-    SVGPath svgTrash;
+    SVGPath svgTrash = new SVGPath();
 
     // Constantes
     final String imagesFolder = "src/main/resources/Pictures/";
