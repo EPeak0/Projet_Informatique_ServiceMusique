@@ -4,49 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81d90cc3-964e-4144-99f6-7e4baea42d9d" name="Changes" comment="Quelques mineurs améliorations. (PaDuTou : Nouveau système pour l'ajout et la musique. Il est maintenant possible d'importer des médias depuis l'application. La fonction de suppression de musique a été adapté pour supprimer les fichiers d'image et de musique. + Beaucoups de bugs ou problèmes on été corrigée)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/AddController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/ConfirmController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Pictures/Capture d’écran 2023-06-07 à 22.04.57.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Pictures/ImageExemple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Pictures/incompatibleImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Pictures/unnamed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - ATTLAS &amp; Jodie Knight - Used To The Silence [Monstercat Release] (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Daydreaming (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Ed Sheeran - Borderline [Official Lyric Video] (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Ed Sheeran - Salt Water [Official Lyric Video] (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - HYPHN &amp; f i l i l a - Speed Of Sound (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Kygo - Say Say Say (Lyric Video) ft. Paul McCartney, Michael Jackson (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Nature's Temple (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Noche de paz Gipsy Latino (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Nocif (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Overgrown (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Post Malone - rockstar (Lyrics) ft. 21 Savage (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Post Malone, The Weeknd - One Right Now (Audio) (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Tenno - Dragonfly (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Tenno - Luna (3 AM. Study Session) (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Tenno - The Guiding Wind (Soothing Breeze) (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Vindu - Blood Oath [japanese lofi_chillhop] (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - Winter Morning - purrple cat (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Songs/X2Download.app - mark veins - Compulsion (320 kbps).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/add-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/confirm-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_05_2023_12_52_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_05_2023_12_52__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/AdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projet_informatique_servicemusique/Music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/BaseDonnee.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Pictures/ImagePlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Songs/rockstar.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/UserList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UserList.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/admin-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/login-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projet_informatique_servicemusique/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="81d90cc3-964e-4144-99f6-7e4baea42d9d" name="Changes" comment="final" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,7 +131,7 @@
       <workItem from="1686342529163" duration="37577000" />
       <workItem from="1686511820393" duration="10623000" />
       <workItem from="1686566820261" duration="610000" />
-      <workItem from="1686571520487" duration="432000" />
+      <workItem from="1686571520487" duration="1227000" />
     </task>
     <task id="LOCAL-00001" summary="Bien avancé">
       <created>1685735630616</created>
@@ -231,7 +189,91 @@
       <option name="project" value="LOCAL" />
       <updated>1686049476934</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Quelques mineurs améliorations. (PaDuTou : Nouveau système pour l'ajout et la musique. Il est maintenant possible d'importer des médias depuis l'application. La fonction de suppression de musique a été adapté pour supprimer les fichiers d'image et de musique. + Beaucoups de bugs ou problèmes on été corrigée)">
+      <created>1686573236583</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686573236583</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Quelques mineurs améliorations. (PaDuTou : Nouveau système pour l'ajout et la musique. Il est maintenant possible d'importer des médias depuis l'application. La fonction de suppression de musique a été adapté pour supprimer les fichiers d'image et de musique. + Beaucoups de bugs ou problèmes on été corrigée)">
+      <created>1686573267314</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686573267314</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Quelques mineurs améliorations. (PaDuTou : Nouveau système pour l'ajout et la musique. Il est maintenant possible d'importer des médias depuis l'application. La fonction de suppression de musique a été adapté pour supprimer les fichiers d'image et de musique. + Beaucoups de bugs ou problèmes on été corrigée)">
+      <created>1686573274131</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686573274131</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Quelques mineurs améliorations. (PaDuTou : Nouveau système pour l'ajout et la musique. Il est maintenant possible d'importer des médias depuis l'application. La fonction de suppression de musique a été adapté pour supprimer les fichiers d'image et de musique. + Beaucoups de bugs ou problèmes on été corrigée)">
+      <created>1686573274586</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686573274586</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Quelques mineurs améliorations. (PaDuTou : Nouveau système pour l'ajout et la musique. Il est maintenant possible d'importer des médias depuis l'application. La fonction de suppression de musique a été adapté pour supprimer les fichiers d'image et de musique. + Beaucoups de bugs ou problèmes on été corrigée)">
+      <created>1686573274778</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686573274778</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Quelques mineurs améliorations. (PaDuTou : Nouveau système pour l'ajout et la musique. Il est maintenant possible d'importer des médias depuis l'application. La fonction de suppression de musique a été adapté pour supprimer les fichiers d'image et de musique. + Beaucoups de bugs ou problèmes on été corrigée)">
+      <created>1686573275167</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686573275167</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Quelques mineurs améliorations. (PaDuTou : Nouveau système pour l'ajout et la musique. Il est maintenant possible d'importer des médias depuis l'application. La fonction de suppression de musique a été adapté pour supprimer les fichiers d'image et de musique. + Beaucoups de bugs ou problèmes on été corrigée)">
+      <created>1686573275696</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686573275696</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Quelques mineurs améliorations. (PaDuTou : Nouveau système pour l'ajout et la musique. Il est maintenant possible d'importer des médias depuis l'application. La fonction de suppression de musique a été adapté pour supprimer les fichiers d'image et de musique. + Beaucoups de bugs ou problèmes on été corrigée)">
+      <created>1686573275895</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686573275895</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Quelques mineurs améliorations. (PaDuTou : Nouveau système pour l'ajout et la musique. Il est maintenant possible d'importer des médias depuis l'application. La fonction de suppression de musique a été adapté pour supprimer les fichiers d'image et de musique. + Beaucoups de bugs ou problèmes on été corrigée)">
+      <created>1686573276089</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686573276089</updated>
+    </task>
+    <task id="LOCAL-00018" summary="final">
+      <created>1686573280614</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1686573280614</updated>
+    </task>
+    <task id="LOCAL-00019" summary="final">
+      <created>1686573282617</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686573282617</updated>
+    </task>
+    <task id="LOCAL-00020" summary="final">
+      <created>1686573330053</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1686573330053</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +300,9 @@
     <MESSAGE value="Ajout de la class &quot;Music&quot;" />
     <MESSAGE value="Ajout de la class &quot;Music&quot; et correction de diverses problèmes" />
     <MESSAGE value="Ajout de la fonction de suppression de ligne" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la fonction de suppression de ligne" />
+    <MESSAGE value="Quelques mineurs améliorations. (PaDuTou : Nouveau système pour l'ajout et la musique. Il est maintenant possible d'importer des médias depuis l'application. La fonction de suppression de musique a été adapté pour supprimer les fichiers d'image et de musique. + Beaucoups de bugs ou problèmes on été corrigée)" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
