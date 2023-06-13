@@ -6,7 +6,8 @@ Pourquoi ? --> C'est les initiales de nos 3 prénoms et sa sonne bien.
 ***
 
 Ajouter la librairie "opencsv-3.8" qui se trouve dans le dossier "lib"
-Main --> HelloApplication
+
+(Point de départ) Main --> HelloApplication
 
 ***
 
